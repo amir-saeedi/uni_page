@@ -313,6 +313,16 @@ select {
   padding: 10px;
 }
 
+.section_main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.section_main .card {
+  width: 25rem;
+}
+
 .footer {
   width: 100%;
   background-color: #125f3b;

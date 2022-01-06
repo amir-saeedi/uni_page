@@ -14,8 +14,12 @@
     padding: 10px;
   }
 }
-.footer {
+.section_main {
   width: 100%;
-  background-color: #125f3b;
-  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .card {
+    width: 25rem;
+  }
 }
