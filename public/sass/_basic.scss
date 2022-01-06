@@ -45,7 +45,11 @@ html {
   }
 }
 body {
+  display: flex;
+  flex-direction: column;
   font-family: BalooBhaijaan, Bnazanin;
+  overflow-x: hidden;
+  background: #f5f2f2;
   direction: ltr;
   font-weight: 400;
   line-height: 1.6;
@@ -65,7 +69,7 @@ a {
 }
 .container {
   max-width: 120rem;
-  min-height: 117rem;
+  // min-height: 117rem;
   margin: 4vw auto;
   //   background-color: #fff;
   border-radius: 9px;

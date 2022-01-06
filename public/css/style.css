@@ -28,7 +28,11 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: BalooBhaijaan, Bnazanin;
+  overflow-x: hidden;
+  background: #f5f2f2;
   direction: ltr;
   font-weight: 400;
   line-height: 1.6;
@@ -49,7 +53,6 @@ a {
 
 .container {
   max-width: 120rem;
-  min-height: 117rem;
   margin: 4vw auto;
   border-radius: 9px;
   overflow: hidden;
@@ -253,7 +256,9 @@ select {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
   background-color: #2c6dbd !important;
   overflow: hidden;
 }
@@ -291,16 +296,27 @@ select {
   display: block;
   white-space: nowrap;
 }
-.navbar .container-fluid .nav_logo::before {
-  position: absolute;
-  top: 0;
-  left: 65%;
-  height: 100%;
+
+.carousel-inner img {
   width: 100%;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
-  content: "";
-  transform: skew(40deg);
-  z-index: 1;
+  height: 600px;
+}
+
+.H_section {
+  text-align: center;
+  padding-top: 30px;
+}
+.H_section h2 {
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+  padding: 10px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #125f3b;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
