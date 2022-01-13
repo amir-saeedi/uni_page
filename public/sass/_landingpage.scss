@@ -21,10 +21,12 @@
 .section_main {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   .card {
     width: 32rem;
+    margin: 10px 30px;
   }
 }
 .main_container {

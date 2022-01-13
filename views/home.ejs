@@ -24,8 +24,7 @@
   <body>
     <!-- nav bar -->
     <%- include("navbar.ejs") %>
-    <!-- carousel -->
-    <div class="main">
+    <!-- main -->
       <header id="H_header">
         <div
           id="carouselExampleIndicators"
@@ -103,7 +102,7 @@
           <hr />
           <div class="section_main">
             <article>
-              <div class="card">
+              <div class="card Regular shadow">
                 <img
                   src="/public/img/avatar1.png"
                   class="card-img-top"
@@ -120,7 +119,7 @@
               </div>
             </article>
             <article>
-              <div class="card">
+              <div class="card Regular shadow">
                 <img
                   src="/public/img/avatar3.png"
                   class="card-img-top"
@@ -137,7 +136,7 @@
               </div>
             </article>
             <article>
-              <div class="card">
+              <div class="card Regular shadow">
                 <img
                   src="/public/img/avatar2.png"
                   class="card-img-top"
@@ -169,7 +168,12 @@
           </div>
       </section>
       <hr>
-    </div>
+      <section id="H_section-3" class="info H_section bg-info">
+        <div class="container main_container">
+          <h2 class="section_title">درباره ی انجمن</h2>
+          <p class="pt-5 pb-5 text-white" style="font-size: 15px;" >در سال 1376 اولین دوره از انجمن علمی مهندسی مکانیک دانشگاه تبریز تشکیل شد و پس از آن تاکنون (1399)، 24 دوره از انجمن را در تاریخ خود ثبت شده می‌بینیم. در سال 1392، با تدوین اساسنامه داخلی انجمن، گامی در راستای قانون‌مند کردن هرچه بیشتر انجمن علمی برداشته شد. شاکله اصلی انجمن‌ علمی مهندسی مکانیک دانشگاه تبریز متشکل از 7 نفر عضو اصلی و 2 نفر عضو علی البدل می‌باشد که هرساله با برگزاری انتخابات میان دانشجویان، این اعضا مشخص می‌گردند و علاوه بر اعضای اصلی در شورای مرکزی، همواره دانشجویانی هستند که بدون کمک آنها انجمن علمی نمی توانست هیچ گاه به موفقیت های خود دست یابد.</p>
+        </div>
+      </section>
     <!-- footer -->
     <%- include("footer.ejs") %>
   </body>
