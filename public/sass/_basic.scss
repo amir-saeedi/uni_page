@@ -47,6 +47,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   font-family: BalooBhaijaan, Bnazanin;
   overflow-x: hidden;
   background: #f5f2f2;
@@ -58,7 +59,7 @@ body {
   // background-image: $gradient;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: calc(100vh - 2 * 4vw);
+  min-height: calc(100vh);
 }
 li {
   color: black;

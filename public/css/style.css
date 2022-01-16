@@ -30,6 +30,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   font-family: BalooBhaijaan, Bnazanin;
   overflow-x: hidden;
   background: #f5f2f2;
@@ -39,7 +40,7 @@ body {
   font-size: 2rem;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: calc(100vh - 8vw);
+  min-height: 100vh;
 }
 
 li {
@@ -297,20 +298,16 @@ select {
   white-space: nowrap;
 }
 
-#H_header {
-  padding-top: 100px;
-}
-
 .carousel-inner img {
   width: 100%;
   height: 600px;
 }
 
-.H_section {
+.section {
   text-align: center;
   padding-top: 30px;
 }
-.H_section h2 {
+.section h2 {
   font-size: 30px;
   font-weight: 600;
   text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
@@ -334,6 +331,22 @@ select {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#About_header {
+  text-align: right;
+  padding: 30px 40px;
+  margin-top: 20px;
+}
+
+.section_main .card_About {
+  width: 20rem;
+}
+
+.text_honors {
+  width: 100%;
+  text-align: end;
+  padding-top: 50px;
 }
 
 .footer {
