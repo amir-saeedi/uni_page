@@ -10,6 +10,9 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about");
 });
+app.get("/courses", (req, res) => {
+  res.render("courses");
+});
 /////////
 app.listen(1000, () => {
   console.log("Listening on port 1000");

@@ -3,6 +3,7 @@
   position: fixed;
   z-index: 100;
   width: 100%;
+  max-height: 68px;
   background-color: #2c6dbd !important;
   overflow: hidden;
   .navbar-collapse {
@@ -17,13 +18,13 @@
   }
   .container-fluid {
     .nav_logo {
-      width: 40%;
+      width: 30%;
       display: flex;
       justify-content: center;
       align-content: center;
       align-items: center;
       img {
-        width: 50%;
+        width: 45%;
         z-index: 10;
       }
       .nav_logo_text {
