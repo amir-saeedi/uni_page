@@ -1,0 +1,42 @@
+.special {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .sec-left {
+    width: 50%;
+  }
+  .sec-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    p {
+      width: 50%;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 0.9;
+      margin-bottom: 40px;
+    }
+    img {
+      width: 50%;
+      height: 50%;
+    }
+  }
+}
+.courses {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  .course_articel {
+    max-width: 25rem;
+    margin: 10px 20px;
+  }
+}
+.item {
+  padding: 150px 0;
+  background: chartreuse;
+}
