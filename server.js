@@ -16,6 +16,9 @@ app.get("/courses", (req, res) => {
 app.get("/teknick", (req, res) => {
   res.render("teknick");
 });
+app.get("/blog", (req, res) => {
+  res.render("blog");
+});
 /////////
 app.listen(1000, () => {
   console.log("Listening on port 1000");
