@@ -98,10 +98,15 @@ select {
 
 .header_m {
   text-align: right;
-  padding: 30px 40px;
+  padding: 40px 0 0 0;
   margin-top: 20px;
   font-size: 30px;
   font-weight: bold;
+  background: rgba(56, 56, 56, 0.705);
+}
+.header_m p {
+  padding-right: 40px;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .section {
@@ -388,6 +393,18 @@ select {
 .carousel .carousel-indicators .active {
   opacity: 0.7;
   background: #fcc419;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.row p {
+  font-size: 25px;
+}
+.row .row_header {
+  margin-top: 25px;
 }
 
 .text_honors {

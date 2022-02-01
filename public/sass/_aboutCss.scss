@@ -1,3 +1,14 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    font-size: 25px;
+  }
+  .row_header {
+    margin-top: 25px;
+  }
+}
 .text_honors {
   width: 100%;
   text-align: end;
