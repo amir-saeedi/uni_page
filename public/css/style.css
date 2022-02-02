@@ -421,7 +421,21 @@ select {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+.special .row {
+  display: flex;
+  align-content: center;
+}
+.special .row .ih-item.circle {
+  width: 330px !important;
+  height: 330px !important;
+}
+.special .row .ih-item img,
+.special .row .ih-item.circle .img:before {
+  width: 150% !important;
+  height: 150% !important;
 }
 .special .sec-left {
   width: 50%;
@@ -457,9 +471,20 @@ select {
   margin: 10px 20px;
 }
 
-.item {
-  padding: 150px 0;
-  background: chartreuse;
+.item img {
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+}
+
+.owl-prev,
+.owl-next {
+  color: #fcc419 !important;
+  font-size: 40px !important;
+  transition: all 0.5s;
+}
+.owl-prev:hover,
+.owl-next:hover {
+  color: red !important;
 }
 
 .sec-right h2 {
