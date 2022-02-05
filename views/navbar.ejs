@@ -1,13 +1,11 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <div class="nav_logo">
-      <a class="nav_logo" href="#">
-        <img src="/public/img/avatar1.png" alt=""
+      <a class="nav_logo_img" href="/">
+        <img class="nav_logo-img" src="/public/img/avatar1.png" alt=""
       /></a>
       <div class="nav_logo_text">
-        <a href="#">
-          <p>انجمن علمی دانشجويی مهندسی<span>مکانیک دانشگاه خوارزمی</span></p>
-        </a>
+        <p>انجمن علمی دانشجويی مهندسی<span>مکانیک دانشگاه خوارزمی</span></p>
       </div>
     </div>
     <button
@@ -24,21 +22,26 @@
     <div class="navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="/blog">وبلاگ</a>
+          <a class="nav-link nav__link" aria-current="page" href="/"
+            >صفحه ی اصلی</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/teknick">نشریه تکنیک</a>
+          <a class="nav-link nav__link" href="/about">درباره ی ما</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/courses">دوره ها و رویداد ها</a>
+          <a class="nav-link nav__link" href="/teknick">نشریه تکنیک</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about">درباره ی ما</a>
+          <a class="nav-link nav__link" href="/courses">دوره ها و رویداد ها</a>
         </li>
-        <li class="nav-item p">
-          <a class="nav-link active" aria-current="page" href="/">خانه</a>
+        <li class="nav-item">
+          <a class="nav-link nav__link" href="/blog">وبلاگ</a>
         </li>
       </ul>
+    </div>
+    <div class="logo_uni animate__animated animate__backInDown">
+      <img src="/public/img/avatar6.png" alt="" />
     </div>
   </div>
 </nav>

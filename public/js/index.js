@@ -2,7 +2,10 @@
 const nav = document.querySelector(".navbar");
 const header = document.querySelector(".header");
 header.style.paddingTop = nav.offsetHeight + "px";
-//
+if (screen.width <= 1000) {
+  header.style.paddingTop = 0;
+}
+// owl
 $(".owl-carousel").owlCarousel({
   loop: true,
   autoplay: true,
@@ -50,7 +53,7 @@ if (document.querySelector("#H_header")) {
   sectionAnimat(newsUp, "animate__backInUp");
   sectionAnimat(newsRight, "animate__backInRight");
   sectionAnimat(HSectionVideo, "animate__fadeInUp");
-  sectionAnimat(HSectiontext, "animate__lightSpeedInRight");
+  sectionAnimat(HSectiontext, "animate__zoomInRight");
 } else if (document.querySelector("#cours_header")) {
   // courses page animated
   const courseleft = document.querySelector(".course_left");
@@ -62,5 +65,108 @@ if (document.querySelector("#H_header")) {
   sectionAnimat(courseUp1, "animate__backInUp");
   sectionAnimat(courseUp2, "animate__backInUp");
   sectionAnimat(courseRight, "animate__backInRight");
+} else if (document.querySelector("#blog_header")) {
+  // blog page  animated
+  const blogLeft = document.querySelectorAll(".blog_left");
+  const blogRight = document.querySelectorAll(".blog_right");
+
+  blogLeft.forEach((el) => {
+    console.log(el);
+    sectionAnimat(el, "animate__backInLeft");
+  });
+  blogRight.forEach((el) => {
+    sectionAnimat(el, "animate__backInLeft");
+  });
 }
-//
+//////////////////////////////
+// blog animated
+$(function () {
+  $(".blog_btn_next").click(function () {
+    $(".blog_next").fadeToggle();
+    $(".blog_btn_next").fadeToggle();
+    // $(".blog_article").css("background-color", "red");
+  });
+  $(".blog_btn_close").click(function () {
+    $(".blog_next").fadeToggle();
+    $(".blog_btn_next").fadeToggle();
+    // $(".blog_article").css("background-color", "#f5f2f2");
+  });
+});
+///////////////////////////////////////
+// animate logo navbar
+const logoUni = document.querySelector(".logo_uni");
+document.addEventListener("scroll", function (e) {
+  if (e.isTrusted) {
+    if (window.scrollY > 100) {
+      logoUni.classList.add("animate__backOutUp");
+      logoUni.classList.remove("animate__backInDown");
+    } else {
+      logoUni.classList.remove("animate__backOutUp");
+      logoUni.classList.add("animate__backInDown");
+    }
+  }
+});
+/////////////////////////////////////
+// Menu fade animation
+const handeleHover = function (e, opa) {
+  e.preventDefault();
+  if (e.target.classList.contains("nav__link")) {
+    const link = e.target;
+    const siblings = link.closest(".navbar").querySelectorAll(".nav__link");
+    // const logo = link.closest(".navbar").querySelector("nav_logo_img");
+    siblings.forEach((el) => {
+      if (el !== link) el.style.opacity = opa;
+      // logo.style.opacity = opa;
+    });
+  }
+};
+nav.addEventListener("mouseover", function (e) {
+  handeleHover(e, 0.5);
+});
+nav.addEventListener("mouseout", function (e) {
+  handeleHover(e, 1);
+});
+
+///////////////////////////////////////
+// Lazy loading images
+// const loadImg = function (entries, observer) {
+//   const [entry] = entries;
+//   if (entry.isIntersecting) {
+//     entry.target.src = entry.target.dataset.src;
+//     entry.target.addEventListener('load', function () {
+//       entry.target.classList.remove('lazy-img');
+//       observer.unobserve(entry.target);
+//     });
+//   }
+// };
+// const imgObserver = new IntersectionObserver(loadImg, {
+//   root: null,
+//   threshold: 0,
+//   rootMargin: '200px',
+// });
+// imgTargets.forEach(img => imgObserver.observe(img));
+
+///////////////////////////////////////
+// modal and overlay
+// const openModal = function (e) {
+//   e.preventDefault();
+//   modal.classList.remove('hidden');
+//   overlay.classList.remove('hidden');
+// };
+
+// const closeModal = function () {
+//   modal.classList.add('hidden');
+//   overlay.classList.add('hidden');
+// };
+// btnsOpenModal.forEach(btn => btn.addEventListener('click', openModal));
+// // for (let i = 0; i < btnsOpenModal.length; i++)
+// //   btnsOpenModal[i].addEventListener('click', openModal);
+
+// btnCloseModal.addEventListener('click', closeModal);
+// overlay.addEventListener('click', closeModal);
+
+// document.addEventListener('keydown', function (e) {
+//   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+//     closeModal();
+//   }
+// });

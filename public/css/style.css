@@ -306,34 +306,44 @@ select {
   width: 100%;
   max-height: 68px;
   background-color: #2c6dbd !important;
-  overflow: hidden;
 }
 .navbar .navbar-collapse {
   padding-left: 20%;
+  flex-grow: 0;
+}
+.navbar .navbar-collapse .navbar-nav {
+  display: flex;
+  flex-direction: row-reverse;
 }
 .navbar .navbar-collapse .nav-item {
-  padding: 0 15px;
+  padding: 0 6px;
   white-space: nowrap;
 }
 .navbar .navbar-collapse .nav-item .nav-link {
   color: #fff;
+  font-size: 20px;
+}
+.navbar .navbar-collapse .nav__link {
+  transition: 0.5s all;
 }
 .navbar .container-fluid .nav_logo {
   width: 30%;
   display: flex;
   justify-content: center;
+  text-align: center;
   align-content: center;
   align-items: center;
 }
 .navbar .container-fluid .nav_logo img {
-  width: 45%;
-  z-index: 10;
+  width: 28%;
+  border-radius: 50%;
 }
 .navbar .container-fluid .nav_logo .nav_logo_text {
   z-index: 10;
 }
 .navbar .container-fluid .nav_logo .nav_logo_text p {
   font-size: 1.5rem;
+  color: #fff;
   text-align: end;
   white-space: nowrap;
   font-weight: 300;
@@ -342,7 +352,50 @@ select {
   display: block;
   white-space: nowrap;
 }
+.navbar .logo_uni {
+  position: absolute;
+  top: 20px;
+  left: 47%;
+  right: 47%;
+}
+.navbar .logo_uni img {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+}
 
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    max-height: none;
+  }
+  .navbar .logo_uni {
+    top: 5px;
+    left: 50%;
+    right: 40%;
+  }
+  .navbar .logo_uni img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+  }
+
+  .nav_logo_img {
+    display: none;
+  }
+
+  .nav_logo_text {
+    margin-left: 45px;
+    padding: 20px;
+  }
+
+  .navbar-collapse {
+    padding-left: 0 !important;
+  }
+  .navbar-collapse .navbar-nav {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
 .carousel {
   position: relative;
 }
@@ -1209,6 +1262,19 @@ select {
 }
 .blog_main_img-R .blog_text {
   background: #00ff95;
+}
+
+.blog_next {
+  direction: rtl;
+  text-align: justify;
+  padding-bottom: 100px;
+}
+.blog_next p {
+  font-size: 20px;
+  color: #555;
+}
+.blog_next .blog_btn_close {
+  display: inline-block;
 }
 
 .footer {

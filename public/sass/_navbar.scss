@@ -5,15 +5,24 @@
   width: 100%;
   max-height: 68px;
   background-color: #2c6dbd !important;
-  overflow: hidden;
+  // overflow: hidden;
   .navbar-collapse {
     padding-left: 20%;
+    flex-grow: 0;
+    .navbar-nav {
+      display: flex;
+      flex-direction: row-reverse;
+    }
     .nav-item {
-      padding: 0 15px;
+      padding: 0 6px;
       white-space: nowrap;
       .nav-link {
         color: #fff;
+        font-size: 20px;
       }
+    }
+    .nav__link {
+      transition: 0.5s all;
     }
   }
   .container-fluid {
@@ -21,16 +30,18 @@
       width: 30%;
       display: flex;
       justify-content: center;
+      text-align: center;
       align-content: center;
       align-items: center;
       img {
-        width: 45%;
-        z-index: 10;
+        width: 28%;
+        border-radius: 50%;
       }
       .nav_logo_text {
         z-index: 10;
         p {
           font-size: 1.5rem;
+          color: #fff;
           text-align: end;
           white-space: nowrap;
           font-weight: 300;
@@ -41,21 +52,46 @@
           }
         }
       }
-
-      // &::before {
-      //   position: absolute;
-      //   top: 0;
-      //   right: 60%;
-      //   height: 100%;
-      //   width: 100%;
-      //   background-color: rgba(
-      //     var(--bs-light-rgb),
-      //     var(--bs-bg-opacity)
-      //   ) !important;
-      //   content: "";
-      //   transform: skew(40deg);
-      //   z-index: 1;
-      // }
+    }
+  }
+  .logo_uni {
+    position: absolute;
+    top: 20px;
+    left: 47%;
+    right: 47%;
+    img {
+      max-width: 100px;
+      max-height: 100px;
+      border-radius: 50%;
+    }
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    max-height: none;
+    .logo_uni {
+      top: 5px;
+      left: 50%;
+      right: 40%;
+      img {
+        max-width: 80px;
+        max-height: 80px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .nav_logo_img {
+    display: none;
+  }
+  .nav_logo_text {
+    margin-left: 45px;
+    padding: 20px;
+  }
+  .navbar-collapse {
+    padding-left: 0 !important;
+    .navbar-nav {
+      display: flex;
+      flex-direction: column !important;
     }
   }
 }
