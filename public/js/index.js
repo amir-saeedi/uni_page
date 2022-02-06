@@ -71,27 +71,12 @@ if (document.querySelector("#H_header")) {
   const blogRight = document.querySelectorAll(".blog_right");
 
   blogLeft.forEach((el) => {
-    console.log(el);
     sectionAnimat(el, "animate__backInLeft");
   });
   blogRight.forEach((el) => {
     sectionAnimat(el, "animate__backInLeft");
   });
 }
-//////////////////////////////
-// blog animated
-$(function () {
-  $(".blog_btn_next").click(function () {
-    $(".blog_next").fadeToggle();
-    $(".blog_btn_next").fadeToggle();
-    // $(".blog_article").css("background-color", "red");
-  });
-  $(".blog_btn_close").click(function () {
-    $(".blog_next").fadeToggle();
-    $(".blog_btn_next").fadeToggle();
-    // $(".blog_article").css("background-color", "#f5f2f2");
-  });
-});
 ///////////////////////////////////////
 // animate logo navbar
 const logoUni = document.querySelector(".logo_uni");
@@ -106,6 +91,18 @@ document.addEventListener("scroll", function (e) {
     }
   }
 });
+//////////////////////////////
+// blog animated
+$(function () {
+  $(".btn").click(function (e) {
+    let x = e.target.dataset.btnBlog;
+    $(`.blog_next${x}`).fadeToggle();
+    $(`.bolg_text_title${x}`).fadeToggle();
+    $(`.bolg_text_description${x}`).fadeToggle();
+    $(`.blog_description${x}`).fadeToggle();
+  });
+});
+
 /////////////////////////////////////
 // Menu fade animation
 const handeleHover = function (e, opa) {
@@ -170,3 +167,16 @@ nav.addEventListener("mouseout", function (e) {
 //     closeModal();
 //   }
 // });
+
+// map footer
+var map = L.map("map").setView([35.857073535334436, 50.915887891938205], 13);
+
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+}).addTo(map);
+
+L.marker([35.857073535334436, 50.915887891938205])
+  .addTo(map)
+  .bindPopup("kharazmi university,<br> Technical College")
+  .openPopup();
