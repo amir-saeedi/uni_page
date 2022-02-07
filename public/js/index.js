@@ -3,7 +3,7 @@ const nav = document.querySelector(".navbar");
 const header = document.querySelector(".header");
 header.style.paddingTop = nav.offsetHeight + "px";
 if (screen.width <= 1000) {
-  header.style.paddingTop = 0;
+  header.style.paddingTop = 100 + "px";
 }
 // owl
 $(".owl-carousel").owlCarousel({
@@ -167,7 +167,44 @@ nav.addEventListener("mouseout", function (e) {
 //     closeModal();
 //   }
 // });
+//
+//////////////////////////////////////
+// scrollProgressBar
+function scrollProgressBar() {
+  var getMax = function () {
+    return $(document).height() - $(window).height();
+  };
 
+  var getValue = function () {
+    return $(window).scrollTop();
+  };
+
+  var progressBar = $(".progress-bar"),
+    max = getMax(),
+    value,
+    width;
+
+  var getWidth = function () {
+    // Calculate width in percentage
+    value = getValue();
+    width = (value / max) * 100;
+    width = width + "%";
+    return width;
+  };
+
+  var setWidth = function () {
+    progressBar.css({ width: getWidth() });
+  };
+
+  $(document).on("scroll", setWidth);
+  $(window).on("resize", function () {
+    // Need to reset max
+    max = getMax();
+    setWidth();
+  });
+}
+scrollProgressBar();
+///////////////////////////////////////////
 // map footer
 var map = L.map("map").setView([35.857073535334436, 50.915887891938205], 13);
 

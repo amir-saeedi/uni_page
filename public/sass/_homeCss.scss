@@ -10,7 +10,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: red;
+    background: $home-bg-carousel_control_style;
     &::after {
       content: "";
       display: block;
@@ -20,14 +20,15 @@
       margin-left: 10px;
       border-style: solid;
       border-width: 10px 0 10px 25px;
-      border-color: transparent transparent transparent #fcc419;
+      border-color: transparent transparent transparent
+        $home-bg-carousel_control_style-color;
     }
   }
   .carousel_control_style_L {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: rgb(189, 3, 3);
+    background: $home-bg-carousel_control_style;
     &::after {
       content: "";
       display: block;
@@ -37,17 +38,38 @@
       height: 0;
       border-style: solid;
       border-width: 10px 25px 10px 0;
-      border-color: transparent #fcc419 transparent transparent;
+      border-color: transparent $home-bg-carousel_control_style-color
+        transparent transparent;
     }
   }
   .carousel-indicators [data-bs-target] {
     width: 15px;
     height: 5px;
     border-radius: 50%;
-    background: rgb(189, 3, 3);
+    background: $home-bg-carousel_control_style;
   }
   .carousel-indicators .active {
     opacity: 0.7;
-    background: #fcc419;
+    background: $home-bg-carousel_control_style-color;
+  }
+}
+.h_news {
+  img {
+    min-height: 300px;
+    max-height: 300px;
+  }
+}
+.h_about {
+  background-image: url("/public/img/blob-haikei.svg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  h2 {
+    color: $color-grey-light-2;
+    text-shadow: $shadow-text-1;
+  }
+  p {
+    color: $color-grey-dark-2;
   }
 }

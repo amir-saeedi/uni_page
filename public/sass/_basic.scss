@@ -4,11 +4,35 @@ $color-primary: #f38e82;
 $color-grad-1: #fbdb89;
 $color-grad-2: #f48982;
 
+$bg-color-body: #f5f2f2;
+$bg-header-section: rgba(56, 56, 56, 0.705);
+// nav
+$nav-bg-nav: rgb(32, 98, 136);
+$nav-bg-progress-bar: rgb(86, 241, 86);
+// home
+$home-bg-carousel_control_style: rgb(155, 11, 112);
+$home-bg-carousel_control_style-color: #000;
+$home-bg-h_about: #fcc419;
+// about
+// tecnick
+$tecnick-clor-sec-right: #017014;
+//course
+$cours-bg-owl: rgb(155, 11, 112);
+$cours-bg-owl-hover: #fcc419;
+// footer
+$footer-bg-footer: #0b3a24;
+$footer-bg-footer-end: #05180f;
+
 $color-grey-light-1: #f9f5f3; // Light background
 $color-grey-light-2: #f2efee; // Light lines
 $color-grey-light-3: #d3c7c3; // Light text (placeholder)
-$color-grey-dark-1: #615551; // Normal text
-$color-grey-dark-2: #918581; // Lighter text
+
+$color-grey-dark-1: #3b3432; // top text
+$color-grey-dark-2: #615551; // Normal text
+$color-grey-dark-3: #918581; // Lighter text
+
+$shadow-text-1: 1px 1px 1px #000, -1px -1px 1px #fff; // bg light
+$shadow-text-2: 1px 1px 1px #fff, -1px -1px 1px #000; // bg dark
 
 $gradient: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
 
@@ -50,13 +74,11 @@ body {
   justify-content: space-between;
   font-family: BalooBhaijaan, Bnazanin;
   overflow-x: hidden;
-  background: #f5f2f2;
+  background: $bg-color-body;
   direction: ltr;
   font-weight: 400;
   line-height: 1.6;
   font-size: 2rem;
-  //   color: $color-grey-dark-1;
-  // background-image: $gradient;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: calc(100vh);
@@ -70,20 +92,9 @@ a {
 }
 .container {
   max-width: 120rem;
-  // min-height: 117rem;
   margin: 4vw auto;
-  //   background-color: #fff;
   border-radius: 9px;
   overflow: hidden;
-  //   box-shadow: 0 2rem 6rem 0.5rem rgba($color-grey-dark-1, 0.2);
-
-  //   display: grid;
-  //   grid-template-rows: 10rem minmax(100rem, auto);
-  //   grid-template-columns: 1fr 2fr;
-  //   grid-template-areas:
-  //     "head head"
-  //     "list recipe";
-
   @media only screen and (max-width: $bp-large) {
     max-width: 100%;
     margin: 0;
@@ -101,6 +112,9 @@ hr {
 }
 a {
   text-decoration: none;
+}
+p {
+  color: $color-grey-dark-2;
 }
 li {
   list-style: none;
@@ -121,19 +135,22 @@ select {
   margin-top: 20px;
   font-size: 30px;
   font-weight: bold;
-  background: rgba(56, 56, 56, 0.705);
+  background: $bg-header-section;
   p {
     padding-right: 40px;
-    text-shadow: 1px 1px 1px #000;
+    text-shadow: $shadow-text-1;
+    color: $color-grey-light-1;
   }
 }
 .section {
+  position: relative;
   text-align: center;
   padding-top: 30px;
   h2 {
+    color: $color-grey-dark-1;
     font-size: 30px;
     font-weight: 600;
-    text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+    text-shadow: $shadow-text-1;
     padding: 10px;
   }
 }

@@ -1,6 +1,6 @@
 .sec-right {
   h2 {
-    color: chartreuse;
+    color: $tecnick-clor-sec-right;
   }
   .tecknick_links {
     padding-top: 50px;
@@ -8,7 +8,8 @@
   .tec_link_btn {
     margin: 0 26px 13px;
     font-size: 30px;
-    background: #70af16;
+    background: $tecnick-clor-sec-right;
+    color: $color-grey-light-2;
     position: relative;
     height: auto;
     border: none;
@@ -24,7 +25,7 @@
       height: 0;
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
-      border-right: 17px solid #70af16;
+      border-right: 17px solid $tecnick-clor-sec-right;
       left: -17px;
       top: 0px;
     }
@@ -35,7 +36,7 @@
       height: 0;
       border-top: 25px solid transparent;
       border-bottom: 25px solid transparent;
-      border-left: 17px solid #70af16;
+      border-left: 17px solid $tecnick-clor-sec-right;
       right: -17px;
       top: 0px;
     }

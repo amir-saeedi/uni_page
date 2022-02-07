@@ -1,7 +1,7 @@
 .special {
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
   .row {
@@ -17,15 +17,13 @@
       height: 150% !important;
     }
   }
-  .sec-left {
-    width: 50%;
-  }
   .sec-right {
-    width: 50%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
+    padding-bottom: 40px;
     p {
       width: 50%;
       font-size: 30px;
@@ -34,10 +32,20 @@
       margin-bottom: 40px;
     }
     img {
-      width: 50%;
-      height: 50%;
+      width: 250px;
+      height: 200px;
+      opacity: 0.8;
+      background: none;
+      border: none;
     }
   }
+}
+.special_courses {
+  background-image: url("/public/img/blob-haikei.svg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
 }
 .courses {
   width: 100%;
@@ -53,15 +61,15 @@
 .item {
   img {
     border-radius: 10px;
-    box-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
+    box-shadow: $shadow-text-1;
   }
 }
 .owl-prev,
 .owl-next {
-  color: #fcc419 !important;
+  color: $cours-bg-owl !important;
   font-size: 40px !important;
   transition: all 0.5s;
   &:hover {
-    color: red !important;
+    color: $cours-bg-owl-hover !important;
   }
 }
