@@ -60,13 +60,13 @@
   }
 }
 .h_about {
-  background-image: url("/public/img/blob-haikei.svg");
-  background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  // background-image: url("/public/img/blob-haikei.svg");
+  // background-color: #cccccc; /* Used if the image is unavailable */
+  // background-position: center; /* Center the image */
+  // background-repeat: no-repeat; /* Do not repeat the image */
+  // background-size: cover; /* Resize the background image to cover the entire container */
   h2 {
-    color: $color-grey-light-2;
+    color: $color-grey-dark-1;
     text-shadow: $shadow-text-1;
   }
   p {

@@ -1,6 +1,6 @@
-// if (process.env.NODE_ENV !== "production") {
-//   require("dotenv").config();
-// }
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 const express = require("express");
 const app = express();
 const path = require("path");
@@ -23,6 +23,6 @@ app.get("/blog", (req, res) => {
   res.render("blog");
 });
 /////////
-app.listen(1000, () => {
-  console.log("Listening on port 1000");
+app.listen(process.env.PORT || 1000, () => {
+  console.log(`Listening on port ${process.env.PORT || 1000}`);
 });

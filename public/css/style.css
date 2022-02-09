@@ -106,7 +106,7 @@ select {
   margin-top: 20px;
   font-size: 30px;
   font-weight: bold;
-  background: rgba(56, 56, 56, 0.705);
+  background: #515660;
 }
 .header_m p {
   padding-right: 40px;
@@ -313,7 +313,7 @@ select {
   z-index: 100;
   width: 100%;
   max-height: 68px;
-  background-color: #206288 !important;
+  background-color: #303c6c !important;
 }
 .navbar .navbar-collapse {
   padding-left: 20%;
@@ -369,7 +369,7 @@ select {
   left: 44%;
 }
 .navbar .logo_uni img {
-  background-color: #206288;
+  background-color: #303c6c;
   max-width: 100px;
   max-height: 100px;
 }
@@ -378,7 +378,7 @@ select {
   height: 0;
   border-style: solid;
   border-width: 0 52px 52px 0;
-  border-color: transparent #206288 transparent transparent;
+  border-color: transparent #303c6c transparent transparent;
   margin-top: 48px;
 }
 .navbar .logo_uni .logo_uni_right {
@@ -386,7 +386,7 @@ select {
   height: 0;
   border-style: solid;
   border-width: 52px 52px 0 0;
-  border-color: #206288 transparent transparent transparent;
+  border-color: #303c6c transparent transparent transparent;
   margin-top: 48px;
 }
 
@@ -406,7 +406,7 @@ select {
 }
 
 .progress-bar {
-  background-color: #56f156;
+  background-color: #97c13a;
   width: 0%;
   display: block;
   height: inherit;
@@ -460,7 +460,7 @@ select {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #9b0b70;
+  background: #28c6c6;
 }
 .carousel .carousel_control_style_R::after {
   content: "";
@@ -471,13 +471,13 @@ select {
   margin-left: 10px;
   border-style: solid;
   border-width: 10px 0 10px 25px;
-  border-color: transparent transparent transparent #000;
+  border-color: transparent transparent transparent #515660;
 }
 .carousel .carousel_control_style_L {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #9b0b70;
+  background: #28c6c6;
 }
 .carousel .carousel_control_style_L::after {
   content: "";
@@ -488,17 +488,17 @@ select {
   height: 0;
   border-style: solid;
   border-width: 10px 25px 10px 0;
-  border-color: transparent #000 transparent transparent;
+  border-color: transparent #515660 transparent transparent;
 }
 .carousel .carousel-indicators [data-bs-target] {
   width: 15px;
   height: 5px;
   border-radius: 50%;
-  background: #9b0b70;
+  background: #28c6c6;
 }
 .carousel .carousel-indicators .active {
   opacity: 0.7;
-  background: #000;
+  background: #515660;
 }
 
 .h_news img {
@@ -506,19 +506,8 @@ select {
   max-height: 300px;
 }
 
-.h_about {
-  background-image: url("/public/img/blob-haikei.svg");
-  background-color: #cccccc;
-  /* Used if the image is unavailable */
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
-}
 .h_about h2 {
-  color: #f2efee;
+  color: #3b3432;
   text-shadow: 1px 1px 1px #000, -1px -1px 1px #fff;
 }
 .h_about p {
@@ -590,18 +579,6 @@ select {
   border: none;
 }
 
-.special_courses {
-  background-image: url("/public/img/blob-haikei.svg");
-  background-color: #cccccc;
-  /* Used if the image is unavailable */
-  background-position: center;
-  /* Center the image */
-  background-repeat: no-repeat;
-  /* Do not repeat the image */
-  background-size: cover;
-  /* Resize the background image to cover the entire container */
-}
-
 .courses {
   width: 100%;
   display: flex;
@@ -621,17 +598,17 @@ select {
 
 .owl-prev,
 .owl-next {
-  color: #9b0b70 !important;
+  color: #28c6c6 !important;
   font-size: 40px !important;
   transition: all 0.5s;
 }
 .owl-prev:hover,
 .owl-next:hover {
-  color: #fcc419 !important;
+  color: #303c6c !important;
 }
 
 .sec-right h2 {
-  color: #017014;
+  color: #97c13a;
 }
 .sec-right .tecknick_links {
   padding-top: 50px;
@@ -639,7 +616,7 @@ select {
 .sec-right .tec_link_btn {
   margin: 0 26px 13px;
   font-size: 30px;
-  background: #017014;
+  background: #97c13a;
   color: #f2efee;
   position: relative;
   height: auto;
@@ -657,7 +634,7 @@ select {
   height: 0;
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
-  border-right: 17px solid #017014;
+  border-right: 17px solid #97c13a;
   left: -17px;
   top: 0px;
 }
@@ -668,7 +645,7 @@ select {
   height: 0;
   border-top: 25px solid transparent;
   border-bottom: 25px solid transparent;
-  border-left: 17px solid #017014;
+  border-left: 17px solid #97c13a;
   right: -17px;
   top: 0px;
 }
@@ -1398,7 +1375,7 @@ select {
 
 .section_footer {
   width: 100%;
-  background-color: #0b3a24;
+  background-color: #97c13a;
 }
 .section_footer .footer_body {
   width: 100%;
@@ -1415,8 +1392,8 @@ select {
 .section_footer .footer_body .footer h2 {
   text-align: center;
   padding-bottom: 10px;
-  color: #f2efee;
-  border-bottom: 1px dotted #fff;
+  color: #f9f5f3;
+  border-bottom: 1px solid #fff;
 }
 .section_footer .footer_body .footer .footer_main {
   margin-top: 40px;
@@ -1428,15 +1405,15 @@ select {
 }
 .section_footer .footer_body .footer p {
   font-size: 15px;
-  color: #d3c7c3;
+  color: #f2efee;
 }
 .section_footer .footer_body .footer p a {
-  color: #d3c7c3;
+  color: #f2efee;
 }
 .section_footer .footer_body .footer a i {
   font-size: 35px;
   padding: 0 20px;
-  color: #d3c7c3;
+  color: #f2efee;
 }
 .section_footer .footer_body .footer .footer_icons {
   width: 100%;
@@ -1456,7 +1433,7 @@ select {
   flex-direction: column;
   align-items: center;
   font-size: 12px;
-  color: #d3c7c3;
+  color: #f2efee;
   opacity: 0;
   top: -36px;
   left: 24px;
@@ -1470,18 +1447,18 @@ select {
   height: 0;
   border-style: solid;
   border-width: 18px 8px 0 8px;
-  border-color: #d3c7c3 transparent transparent transparent;
+  border-color: #f2efee transparent transparent transparent;
 }
 
 .footer-end {
   width: 100%;
   text-align: center;
-  background: #05180f !important;
-  color: #d3c7c3;
+  background: #515660 !important;
   padding: 10px;
 }
 .footer-end p {
   margin-bottom: 0 !important;
+  color: #d3c7c3 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

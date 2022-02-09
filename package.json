@@ -2,9 +2,6 @@
   "name": "uni",
   "description": "university website",
   "version": "1.0.0",
-  "engines": {
-    "node": "16.x"
-  },
   "scripts": {
     "watch:sass": "sass public/sass/main.scss public/css/style.css -w",
     "server": "nodemon server.js",
