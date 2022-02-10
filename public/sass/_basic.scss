@@ -12,7 +12,10 @@ $nav-bg-progress-bar: #97c13a;
 // home
 $home-bg-carousel_control_style: #28c6c6;
 $home-bg-carousel_control_style-color: #515660;
+$home-bg-h_news: #28c6c6;
+$home-bg-h_news_btn: #515660;
 $home-bg-h_about: #28c6c6;
+
 // about
 // tecnick
 $tecnick-clor-sec-right: #97c13a;
@@ -115,6 +118,7 @@ a {
 }
 p {
   color: $color-grey-dark-2;
+  direction: rtl;
 }
 li {
   list-style: none;

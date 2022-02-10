@@ -9,10 +9,30 @@
     margin-top: 25px;
   }
 }
+// style="text-align: end ;padding-top: 30px ;font-size: 16px;
+.text_About {
+  padding-top: 30px;
+
+  p {
+    text-align: start;
+    direction: rtl;
+    font-size: 18px;
+  }
+}
 .text_honors {
   width: 100%;
   text-align: end;
   padding-top: 50px;
+  p {
+    text-align: start;
+    direction: rtl;
+    font-size: 18px;
+    padding-top: 5px;
+    span {
+      padding-left: 8px;
+      font-weight: bold;
+    }
+  }
 }
 .section_main {
   .card_About {
