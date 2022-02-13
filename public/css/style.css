@@ -554,6 +554,16 @@ select {
   font-size: 18px;
 }
 
+.introduction_team .team_description h5 {
+  font-size: 18px;
+  color: #615551;
+}
+.introduction_team .team_description P {
+  font-size: 10px;
+  color: #6c757d;
+  cursor: pointer;
+}
+
 .text_honors {
   width: 100%;
   text-align: end;

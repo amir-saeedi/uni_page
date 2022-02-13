@@ -19,6 +19,19 @@
     font-size: 18px;
   }
 }
+.introduction_team {
+  .team_description {
+    h5 {
+      font-size: 18px;
+      color: $color-grey-dark-2;
+    }
+    P {
+      font-size: 10px;
+      color: $color-grey-dark-4;
+      cursor: pointer;
+    }
+  }
+}
 .text_honors {
   width: 100%;
   text-align: end;
