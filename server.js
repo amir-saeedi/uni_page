@@ -8,8 +8,8 @@ const path = require("path");
 
 const Contactus = require("./models/contactus.js");
 //
-const dbUrl = "mongodb://localhost:27017/uni-khu";
-// const dbUrl = process.env.DB_URL || "mongodb://0.0.0.0:27017/uni-khu";
+// const dbUrl = "mongodb://localhost:27017/uni-khu";
+const dbUrl = process.env.DB_URL || "mongodb://0.0.0.0:27017/uni-khu";
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
   useCreateIndex: true,
@@ -36,7 +36,6 @@ app.get("/about", (req, res) => {
 app.post("/about", async (req, res) => {
   const newContact = new Contactus(req.body);
   // await newContact.save();
-  console.log(newContact);
   res.redirect("/about");
 });
 

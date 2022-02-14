@@ -584,6 +584,54 @@ select {
   width: 20rem;
 }
 
+.contactUs_main {
+  width: 100%;
+  direction: rtl;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  gap: 20px;
+  align-content: space-between;
+}
+.contactUs_main .form_contact_us {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  direction: rtl;
+}
+.contactUs_main .form_contact_us input,
+.contactUs_main .form_contact_us textarea {
+  padding-right: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #615551;
+}
+.contactUs_main .form_contact_us label {
+  font-size: 14px;
+  color: #6c757d;
+}
+.contactUs_main .form_contact_us button {
+  border: 1px solid #999;
+  background: #999;
+  margin-bottom: 10px;
+}
+.contactUs_main .img_form_cnatact {
+  display: flex;
+  align-items: center;
+  background: #888;
+  border-radius: 10px;
+  padding: 20px;
+}
+.contactUs_main .img_form_cnatact img {
+  margin-top: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+}
+
 .special {
   display: flex;
   width: 100%;

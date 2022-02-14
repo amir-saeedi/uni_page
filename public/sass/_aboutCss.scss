@@ -52,3 +52,51 @@
     width: 20rem;
   }
 }
+.contactUs_main {
+  width: 100%;
+  direction: rtl;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  gap: 20px;
+  align-content: space-between;
+  .form_contact_us {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    direction: rtl;
+    input,
+    textarea {
+      padding-right: 10px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: $color-grey-dark-2;
+    }
+    label {
+      font-size: 14px;
+      color: $color-grey-dark-4;
+    }
+    button {
+      border: 1px solid #999;
+      background: #999;
+      margin-bottom: 10px;
+    }
+  }
+  .img_form_cnatact {
+    // width: 60%;
+    display: flex;
+    align-items: center;
+    background: #888;
+    border-radius: 10px;
+    padding: 20px;
+    img {
+      margin-top: auto;
+      width: 100%;
+      height: 100%;
+      max-width: 500px;
+      max-height: 500px;
+    }
+  }
+}
