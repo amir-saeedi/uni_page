@@ -85,7 +85,17 @@
   background: $footer-bg-footer-end !important;
   padding: 10px;
   p {
+    direction: ltr;
+    font-size: 12px;
     margin-bottom: 0 !important;
     color: $color-grey-light-3 !important;
+    a {
+      text-decoration: underline;
+      color: $color-grey-light-3;
+      transition: all 0.2s;
+      &:hover {
+        color: $color-grey-light-2;
+      }
+    }
   }
 }

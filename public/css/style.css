@@ -563,6 +563,13 @@ select {
   color: #6c757d;
   cursor: pointer;
 }
+.introduction_team .team_description a {
+  transition: all 0.2s;
+  color: #6c757d;
+}
+.introduction_team .team_description a:hover {
+  color: #3b3432;
+}
 
 .text_honors {
   width: 100%;
@@ -1562,8 +1569,18 @@ select {
   padding: 10px;
 }
 .footer-end p {
+  direction: ltr;
+  font-size: 12px;
   margin-bottom: 0 !important;
   color: #d3c7c3 !important;
+}
+.footer-end p a {
+  text-decoration: underline;
+  color: #d3c7c3;
+  transition: all 0.2s;
+}
+.footer-end p a:hover {
+  color: #f2efee;
 }
 
 /*# sourceMappingURL=style.css.map */

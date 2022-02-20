@@ -30,6 +30,13 @@
       color: $color-grey-dark-4;
       cursor: pointer;
     }
+    a {
+      transition: all 0.2s;
+      color: $color-grey-dark-4;
+      &:hover {
+        color: $color-grey-dark-1;
+      }
+    }
   }
 }
 .text_honors {
