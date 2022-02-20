@@ -4,8 +4,8 @@
   src: url(/public/font/BalooBhaijaan2-Medium.ttf);
 }
 @font-face {
-  font-family: Bnazanin;
-  src: url(/public/font/B-NAZANIN.TTF);
+  font-family: vazir;
+  src: url(/public/font/Vazir-Regular.woff2);
 }
 * {
   margin: 0;
@@ -32,7 +32,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: BalooBhaijaan, Bnazanin;
+  font-family: vazir, tahoma;
   overflow-x: hidden;
   background: #f5f2f2;
   direction: ltr;
@@ -68,6 +68,19 @@ a {
 }
 
 /* change border colour to suit your needs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+label,
+button {
+  font-family: BalooBhaijaan, Bnazanin, tahoma;
+}
+
 hr {
   display: block;
   height: 1px;
@@ -450,10 +463,18 @@ select {
 .logo_uni_right {
     display: none;
   }
+
+  .fixed-top {
+    top: 99px;
+  }
 }
 .h_btn {
   background: #515660;
   color: #f2efee;
+}
+.h_btn:hover {
+  color: #f2efee;
+  opacity: 0.8;
 }
 
 .carousel {
@@ -509,17 +530,26 @@ select {
 }
 
 .h_news .card {
+  min-width: 330px;
+  max-width: 330px;
   border-radius: 10px;
 }
 .h_news .card img {
-  min-height: 300px;
-  max-height: 300px;
+  min-height: 400px;
+  max-height: 400px;
   border-radius: 10px;
 }
 .h_news a {
   direction: rtl;
   background: #28c6c6;
   color: #f2efee;
+}
+.h_news .btn:hover {
+  background-color: #303c6c !important;
+}
+
+.activity_audio {
+  max-width: 600px;
 }
 
 .h_about h2 {
@@ -549,7 +579,7 @@ select {
   padding-top: 30px;
 }
 .text_About p {
-  text-align: start;
+  text-align: justify;
   direction: rtl;
   font-size: 18px;
 }
@@ -577,7 +607,7 @@ select {
   padding-top: 50px;
 }
 .text_honors p {
-  text-align: start;
+  text-align: justify;
   direction: rtl;
   font-size: 18px;
   padding-top: 5px;
@@ -612,7 +642,7 @@ select {
 .contactUs_main .form_contact_us textarea {
   padding-right: 10px;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 13px;
   color: #615551;
 }
 .contactUs_main .form_contact_us label {
@@ -643,6 +673,8 @@ select {
   display: flex;
   width: 100%;
   flex-wrap: wrap-reverse;
+  gap: 200px;
+  text-align: center;
   justify-content: center;
   align-items: center;
 }
@@ -660,16 +692,15 @@ select {
   height: 150% !important;
 }
 .special .sec-right {
-  max-width: 50%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
-  padding-bottom: 40px;
+  padding-left: 0;
 }
 .special .sec-right p {
-  width: 50%;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 600;
   line-height: 0.9;
   margin-bottom: 40px;
@@ -710,6 +741,11 @@ select {
   color: #303c6c !important;
 }
 
+@media screen and (max-width: 1000px) {
+  .special {
+    gap: 50px;
+  }
+}
 .sec-right {
   padding-left: 50px;
 }
@@ -765,7 +801,7 @@ select {
 .tec_discription p {
   direction: rtl;
   text-align: justify;
-  font-size: 20px;
+  font-size: 16px;
   padding-top: 10px;
   color: #444;
 }
@@ -1407,8 +1443,13 @@ select {
   padding-right: 20px;
 }
 .blog_main .blog_img img {
-  max-width: 250px;
-  max-height: 250px;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+.blog_main .blog_img .blog_img-l {
+  width: 400px;
+  height: 400px;
   border-radius: 10px;
 }
 .blog_main .blog_text {
@@ -1416,14 +1457,14 @@ select {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: #928f8f;
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 .blog_main .blog_text h4 {
   color: #f9f5f3;
   padding: 20px;
   text-align: end;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
 }
 .blog_main .blog_text p {
@@ -1431,8 +1472,8 @@ select {
   padding: 20px;
   direction: rtl;
   color: #f2efee;
-  font-size: 20px;
-  text-align: start;
+  font-size: 16px;
+  text-align: justify;
 }
 .blog_main .blog_text p .blog_btn {
   direction: ltr;
@@ -1449,17 +1490,19 @@ select {
 .blog_description {
   direction: rtl;
   text-align: justify;
-  padding-bottom: 100px;
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(225, 225, 225, 0.7);
 }
 .blog_description h4 {
-  font-size: 40px;
-  color: #3b3432;
+  font-size: 30px;
+  color: #615551;
   text-align: center;
-  padding: 30px;
+  padding: 25px;
 }
 .blog_description p {
-  font-size: 20px;
-  color: #615551;
+  font-size: 16px;
+  color: #3b3432;
 }
 .blog_description .blog_btn_close {
   display: inline-block;
@@ -1472,7 +1515,7 @@ select {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/public/img/symbol-scatter-haikei.svg");
+  background-image: url("/public/img/Blog post-bro.svg");
   background-color: #cccccc;
   /* Used if the image is unavailable */
   background-position: center;
@@ -1481,7 +1524,7 @@ select {
   /* Do not repeat the image */
   background-size: cover;
   /* Resize the background image to cover the entire container */
-  opacity: 0.2;
+  opacity: 0.05;
   z-index: 0;
 }
 

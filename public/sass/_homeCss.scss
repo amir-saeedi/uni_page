@@ -1,6 +1,10 @@
 .h_btn {
   background: $home-bg-h_news_btn;
   color: $color-grey-light-2;
+  &:hover {
+    color: $color-grey-light-2;
+    opacity: 0.8;
+  }
 }
 .carousel {
   position: relative;
@@ -59,10 +63,12 @@
 }
 .h_news {
   .card {
+    min-width: 330px;
+    max-width: 330px;
     border-radius: 10px;
     img {
-      min-height: 300px;
-      max-height: 300px;
+      min-height: 400px;
+      max-height: 400px;
       border-radius: 10px;
     }
   }
@@ -71,6 +77,14 @@
     background: $home-bg-h_news;
     color: $color-grey-light-2;
   }
+  .btn {
+    &:hover {
+      background-color: $nav-bg-nav !important;
+    }
+  }
+}
+.activity_audio {
+  max-width: 600px;
 }
 .h_about {
   // background-image: url("/public/img/blob-haikei.svg");

@@ -14,7 +14,7 @@
   padding-top: 30px;
 
   p {
-    text-align: start;
+    text-align: justify;
     direction: rtl;
     font-size: 18px;
   }
@@ -44,7 +44,7 @@
   text-align: end;
   padding-top: 50px;
   p {
-    text-align: start;
+    text-align: justify;
     direction: rtl;
     font-size: 18px;
     padding-top: 5px;
@@ -78,7 +78,7 @@
     textarea {
       padding-right: 10px;
       margin-bottom: 10px;
-      font-size: 18px;
+      font-size: 13px;
       color: $color-grey-dark-2;
     }
     label {

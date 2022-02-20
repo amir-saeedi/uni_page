@@ -6,24 +6,27 @@ if (screen.width <= 1000) {
   header.style.paddingTop = 100 + "px";
 }
 // owl
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  autoplay: true,
-  margin: 10,
-  nav: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
+if (document.querySelector(".owl-carousel")) {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    margin: 10,
+    nav: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 5,
+      },
     },
-    600: {
-      items: 3,
-    },
-    1000: {
-      items: 5,
-    },
-  },
-});
+  });
+}
+///////////////////////////////////////////////
 //  animate
 const sectionAnimat = function (name, cl) {
   const revealSection = function (entries, observer) {
@@ -93,15 +96,19 @@ document.addEventListener("scroll", function (e) {
 });
 //////////////////////////////
 // blog animated
-$(function () {
-  $(".btn").click(function (e) {
-    let x = e.target.dataset.btnBlog;
-    $(`.blog_next${x}`).fadeToggle();
-    $(`.bolg_text_title${x}`).fadeToggle();
-    $(`.bolg_text_description${x}`).fadeToggle();
-    $(`.blog_description${x}`).fadeToggle();
+if (document.getElementById("blog_header")) {
+  $(function () {
+    $(".btn").click(function (e) {
+      let x = e.target.dataset.btnBlog;
+      $(`.blog_next${x}`).fadeToggle();
+      $(`.bolg_text_title${x}`).fadeToggle(10);
+      $(`.bolg_text_description${x}`).fadeToggle(10);
+      $(`.blog_description${x}`).fadeToggle();
+      $(`#blog_img${x}`).toggleClass("animate__backInDown");
+      $(`#blog_img${x}`).toggleClass("blog_img-l");
+    });
   });
-});
+}
 
 /////////////////////////////////////
 // Menu fade animation
@@ -123,52 +130,7 @@ nav.addEventListener("mouseover", function (e) {
 nav.addEventListener("mouseout", function (e) {
   handeleHover(e, 1);
 });
-
-///////////////////////////////////////
-// Lazy loading images
-// const loadImg = function (entries, observer) {
-//   const [entry] = entries;
-//   if (entry.isIntersecting) {
-//     entry.target.src = entry.target.dataset.src;
-//     entry.target.addEventListener('load', function () {
-//       entry.target.classList.remove('lazy-img');
-//       observer.unobserve(entry.target);
-//     });
-//   }
-// };
-// const imgObserver = new IntersectionObserver(loadImg, {
-//   root: null,
-//   threshold: 0,
-//   rootMargin: '200px',
-// });
-// imgTargets.forEach(img => imgObserver.observe(img));
-
-///////////////////////////////////////
-// modal and overlay
-// const openModal = function (e) {
-//   e.preventDefault();
-//   modal.classList.remove('hidden');
-//   overlay.classList.remove('hidden');
-// };
-
-// const closeModal = function () {
-//   modal.classList.add('hidden');
-//   overlay.classList.add('hidden');
-// };
-// btnsOpenModal.forEach(btn => btn.addEventListener('click', openModal));
-// // for (let i = 0; i < btnsOpenModal.length; i++)
-// //   btnsOpenModal[i].addEventListener('click', openModal);
-
-// btnCloseModal.addEventListener('click', closeModal);
-// overlay.addEventListener('click', closeModal);
-
-// document.addEventListener('keydown', function (e) {
-//   if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-//     closeModal();
-//   }
-// });
-//
-//////////////////////////////////////
+////////////////////////////////////////////
 // scrollProgressBar
 function scrollProgressBar() {
   var getMax = function () {
@@ -242,3 +204,25 @@ L.marker([35.857073535334436, 50.915887891938205])
     );
   });
 })();
+//////////////////////////////////////////////////
+// load images after all *
+if (!document.querySelector(".image_important")) {
+  $(function () {
+    $.each(document.images, function () {
+      var this_image = this;
+      console.log(this_image);
+      var src = $(this_image).attr("src") || "";
+      if (!src.length > 0) {
+        // this_image.src = options.loading; // show loading
+        var lsrc = $(this_image).attr("lsrc") || "";
+        if (lsrc.length > 0) {
+          var img = new Image();
+          img.src = lsrc;
+          $(img).load(function () {
+            this_image.src = this.src;
+          });
+        }
+      }
+    });
+  });
+}

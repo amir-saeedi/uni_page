@@ -2,6 +2,8 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap-reverse;
+  gap: 200px;
+  text-align: center;
   justify-content: center;
   align-items: center;
   .row {
@@ -18,15 +20,16 @@
     }
   }
   .sec-right {
-    max-width: 50%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    padding-bottom: 40px;
+    // padding-bottom: 20px;
+    padding-left: 0;
     p {
-      width: 50%;
-      font-size: 30px;
+      // width: 50%;
+      font-size: 25px;
       font-weight: 600;
       line-height: 0.9;
       margin-bottom: 40px;
@@ -40,13 +43,13 @@
     }
   }
 }
-.special_courses {
-  // background-image: url("/public/img/blob-haikei.svg");
-  // background-color: #cccccc; /* Used if the image is unavailable */
-  // background-position: center; /* Center the image */
-  // background-repeat: no-repeat; /* Do not repeat the image */
-  // background-size: cover; /* Resize the background image to cover the entire container */
-}
+// .special_courses {
+//   background-image: url("/public/img/blob-haikei.svg");
+//   background-color: #cccccc; /* Used if the image is unavailable */
+//   background-position: center; /* Center the image */
+//   background-repeat: no-repeat; /* Do not repeat the image */
+//   background-size: cover; /* Resize the background image to cover the entire container */
+// }
 .courses {
   width: 100%;
   display: flex;
@@ -71,5 +74,11 @@
   transition: all 0.5s;
   &:hover {
     color: $cours-bg-owl-hover !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .special {
+    gap: 50px;
   }
 }

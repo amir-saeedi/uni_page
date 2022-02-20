@@ -50,8 +50,8 @@ $bp-smallest: 31.25em; // 500px
   src: url(/public/font/BalooBhaijaan2-Medium.ttf);
 }
 @font-face {
-  font-family: Bnazanin;
-  src: url(/public/font/B-NAZANIN.TTF);
+  font-family: vazir;
+  src: url(/public/font/Vazir-Regular.woff2);
 }
 * {
   margin: 0;
@@ -76,7 +76,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: BalooBhaijaan, Bnazanin;
+  font-family: vazir, tahoma;
   overflow-x: hidden;
   background: $bg-color-body;
   direction: ltr;
@@ -106,6 +106,18 @@ a {
   }
 }
 /* change border colour to suit your needs */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+li,
+label,
+button {
+  font-family: BalooBhaijaan, Bnazanin, tahoma;
+}
 hr {
   display: block;
   height: 1px;
