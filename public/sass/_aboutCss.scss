@@ -8,6 +8,14 @@
   .row_header {
     margin-top: 25px;
   }
+  .ih-item.circle.effect1 .spinner {
+    border: 10px solid $about-color-border-row-team;
+    border-right-color: $about-color-border-row-team-RandB;
+    border-bottom-color: $about-color-border-row-team-RandB;
+  }
+}
+.spic-title-about {
+  font-family: "vazir";
 }
 // style="text-align: end ;padding-top: 30px ;font-size: 16px;
 .text_About {
@@ -76,13 +84,13 @@
     direction: rtl;
     input,
     textarea {
-      padding-right: 10px;
+      padding: 8px;
+      font-size: 15px;
       margin-bottom: 10px;
-      font-size: 13px;
       color: $color-grey-dark-2;
     }
     label {
-      font-size: 14px;
+      font-size: 16px;
       color: $color-grey-dark-4;
     }
     button {

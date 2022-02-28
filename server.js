@@ -43,8 +43,8 @@ app.post("/about", async (req, res) => {
 app.get("/courses", (req, res) => {
   res.render("courses");
 });
-app.get("/teknick", (req, res) => {
-  res.render("teknick");
+app.get("/technic", (req, res) => {
+  res.render("technic");
 });
 app.get("/blog", (req, res) => {
   res.render("blog");

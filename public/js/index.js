@@ -49,13 +49,13 @@ if (document.querySelector("#H_header")) {
   const newsUp = document.querySelector(".news_up");
   const newsRight = document.querySelector(".news_right");
 
-  const HSectionVideo = document.querySelector("#H_section-2");
+  // const HSectionVideo = document.querySelector("#H_section-2");
   const HSectiontext = document.querySelector("#H_section-3");
 
   sectionAnimat(newsLfet, "animate__backInLeft");
   sectionAnimat(newsUp, "animate__backInUp");
   sectionAnimat(newsRight, "animate__backInRight");
-  sectionAnimat(HSectionVideo, "animate__fadeInUp");
+  // sectionAnimat(HSectionVideo, "animate__fadeInUp");
   sectionAnimat(HSectiontext, "animate__zoomInRight");
 } else if (document.querySelector("#cours_header")) {
   // courses page animated
@@ -63,11 +63,12 @@ if (document.querySelector("#H_header")) {
   const courseUp1 = document.querySelector(".course_up1");
   const courseUp2 = document.querySelector(".course_up2");
   const courseRight = document.querySelector(".course_right");
-
-  sectionAnimat(courseleft, "animate__backInLeft");
-  sectionAnimat(courseUp1, "animate__backInUp");
-  sectionAnimat(courseUp2, "animate__backInUp");
-  sectionAnimat(courseRight, "animate__backInRight");
+  if ((courseRight, courseleft, courseUp1, courseUp2)) {
+    sectionAnimat(courseleft, "animate__backInLeft");
+    sectionAnimat(courseUp1, "animate__backInUp");
+    sectionAnimat(courseUp2, "animate__backInUp");
+    sectionAnimat(courseRight, "animate__backInRight");
+  }
 } else if (document.querySelector("#blog_header")) {
   // blog page  animated
   const blogLeft = document.querySelectorAll(".blog_left");
@@ -206,23 +207,21 @@ L.marker([35.857073535334436, 50.915887891938205])
 })();
 //////////////////////////////////////////////////
 // load images after all *
-if (!document.querySelector(".image_important")) {
-  $(function () {
-    $.each(document.images, function () {
-      var this_image = this;
-      console.log(this_image);
-      var src = $(this_image).attr("src") || "";
-      if (!src.length > 0) {
-        // this_image.src = options.loading; // show loading
-        var lsrc = $(this_image).attr("lsrc") || "";
-        if (lsrc.length > 0) {
-          var img = new Image();
-          img.src = lsrc;
-          $(img).load(function () {
-            this_image.src = this.src;
-          });
-        }
+
+$(function () {
+  $.each(document.images, function () {
+    var this_image = this;
+    var src = $(this_image).attr("src") || "";
+    if (!src.length > 0) {
+      this_image.src = options.loading; // show loading
+      var lsrc = $(this_image).attr("lsrc") || "";
+      if (lsrc.length > 0) {
+        var img = new Image();
+        img.src = lsrc;
+        $(img).load(function () {
+          this_image.src = this.src;
+        });
       }
-    });
+    }
   });
-}
+});

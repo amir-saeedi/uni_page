@@ -15,6 +15,7 @@
     }
     .ih-item img,
     .ih-item.circle .img:before {
+      border-radius: 10% !important;
       width: 150% !important;
       height: 150% !important;
     }
@@ -59,12 +60,21 @@
   .course_articel {
     max-width: 25rem;
     margin: 10px 20px;
+    .card {
+      img {
+        max-height: 350px;
+        min-height: 350px;
+      }
+    }
   }
 }
 .item {
   img {
     border-radius: 10px;
     box-shadow: $shadow-text-1;
+    min-height: 300px;
+    max-height: 300px;
+    min-width: 250px;
   }
 }
 .owl-prev,
@@ -80,5 +90,10 @@
 @media screen and (max-width: 1000px) {
   .special {
     gap: 50px;
+  }
+  .item {
+    // min-width: none;
+    // min-height: none;
+    // max-height: none;
   }
 }

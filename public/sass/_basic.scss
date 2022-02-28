@@ -17,8 +17,11 @@ $home-bg-h_news_btn: #515660;
 $home-bg-h_about: #28c6c6;
 
 // about
-// tecnick
-$tecnick-clor-sec-right: #97c13a;
+$about-color-border-row-team: #303c6c;
+$about-color-border-row-team-RandB: #97c13a;
+
+// technic
+$technic-clor-sec-right: #97c13a;
 //course
 $cours-bg-owl: #28c6c6;
 $cours-bg-owl-hover: #303c6c;
@@ -37,6 +40,10 @@ $color-grey-dark-4: #6c757d; // Meuted text
 
 $shadow-text-1: 1px 1px 1px #000, -1px -1px 1px #fff; // bg light
 $shadow-text-2: 1px 1px 1px #fff, -1px -1px 1px #000; // bg dark
+$shadow-box-1: 1px 1px 1px rgba(0, 0, 0, 0.3),
+  -1px -1px 1px rgba(225, 225, 225, 0.3); // bg light
+$shadow-box-2: 1px 1px 1px rgba(225, 225, 225, 0.3),
+  -1px -1px 1px rgba(0, 0, 0, 0.3); // bg dark
 
 $gradient: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
 
