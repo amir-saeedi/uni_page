@@ -44,6 +44,11 @@
     }
   }
 }
+.info {
+  p {
+    margin: 30px !important;
+  }
+}
 // .special_courses {
 //   background-image: url("/public/img/blob-haikei.svg");
 //   background-color: #cccccc; /* Used if the image is unavailable */
@@ -64,6 +69,21 @@
       img {
         max-height: 350px;
         min-height: 350px;
+      }
+      h5 {
+        color: #777;
+        font-size: 10px;
+      }
+      p {
+        text-align: justify;
+        font-size: 14px;
+      }
+      a {
+        direction: rtl;
+        background: $cours-bg-owl-hover;
+        &:hover {
+          background: $cours-bg-owl;
+        }
       }
     }
   }
@@ -91,9 +111,9 @@
   .special {
     gap: 50px;
   }
-  .item {
-    // min-width: none;
-    // min-height: none;
-    // max-height: none;
-  }
+  // .item {
+  //   min-width: none;
+  //   min-height: none;
+  //   max-height: none;
+  // }
 }

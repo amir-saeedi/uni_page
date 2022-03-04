@@ -35,7 +35,7 @@ app.get("/about", (req, res) => {
 });
 app.post("/about", async (req, res) => {
   const newContact = new Contactus(req.body);
-  // await newContact.save();
+  await newContact.save();
   res.redirect("/about");
 });
 

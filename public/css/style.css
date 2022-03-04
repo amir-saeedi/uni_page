@@ -483,8 +483,8 @@ select {
   margin: 0 auto;
   min-width: 60%;
   max-width: 60%;
-  height: 720px;
-  opacity: 0.8;
+  height: 600px;
+  opacity: 1;
   border-radius: 2px;
 }
 .carousel .carousel_control_style_R {
@@ -528,8 +528,33 @@ select {
   background: #28c6c6;
 }
 .carousel .carousel-indicators .active {
-  opacity: 0.7;
   background: #515660;
+}
+.carousel .carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 10px;
+}
+.carousel .carousel-caption h5 {
+  direction: rtl;
+  margin-top: 18%;
+  font-size: 28px;
+  color: #f9f5f3;
+}
+.carousel .carousel-caption p {
+  font-family: "vazir";
+  padding-top: 20px;
+}
+.carousel .carousel-caption p a {
+  transition: all 0.5s;
+  color: #d3c7c3;
+}
+.carousel .carousel-caption p a:hover {
+  color: inherit;
 }
 
 .h_news .card {
@@ -592,11 +617,6 @@ select {
 }
 .row .row_header {
   margin-top: 25px;
-}
-.row .ih-item.circle.effect1 .spinner {
-  border: 10px solid #303c6c;
-  border-right-color: #97c13a;
-  border-bottom-color: #97c13a;
 }
 
 .spic-title-about {
@@ -742,6 +762,10 @@ select {
   border: none;
 }
 
+.info p {
+  margin: 30px !important;
+}
+
 .courses {
   width: 100%;
   display: flex;
@@ -756,6 +780,21 @@ select {
 .courses .course_articel .card img {
   max-height: 350px;
   min-height: 350px;
+}
+.courses .course_articel .card h5 {
+  color: #777;
+  font-size: 10px;
+}
+.courses .course_articel .card p {
+  text-align: justify;
+  font-size: 14px;
+}
+.courses .course_articel .card a {
+  direction: rtl;
+  background: #303c6c;
+}
+.courses .course_articel .card a:hover {
+  background: #28c6c6;
 }
 
 .item img {
@@ -837,9 +876,16 @@ select {
 .tec_discription p {
   direction: rtl;
   text-align: justify;
-  font-size: 16px;
+  font-size: 18px;
   padding-top: 10px;
   color: #444;
+}
+.tec_discription h5 {
+  direction: rtl;
+  text-align: justify;
+  font-size: 25px;
+  padding-top: 30px;
+  color: #222;
 }
 
 .tec_list {
@@ -875,13 +921,13 @@ select {
   z-index: 100;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 30px;
+  justify-content: center;
   padding-bottom: 50px;
 }
 .blog_main .blog_img {
   display: flex;
   max-width: 100%;
-  padding-right: 20px;
 }
 .blog_main .blog_img img {
   width: 250px;
