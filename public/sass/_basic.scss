@@ -3,31 +3,43 @@
 $color-primary: #f38e82;
 $color-grad-1: #fbdb89;
 $color-grad-2: #f48982;
-
+// f5f2f2 and #515660, #303c6c, #97c13a, #28c6c6 =>step1
+// f5f2f2 and #9ADCFF, #FFF89A, #FFB2A6, #FF8AAE =>step2
+// f5f2f2 and #781D42, #A3423C, #DE834D, #F0D290 =>step3
+$color-One: #781d42;
+$color-Two: #a3423c;
+$color-Three: #de834d;
+$color-four: #f0d290;
+//
 $bg-color-body: #f5f2f2;
-$bg-header-section: #515660;
+$bg-header-section: $color-One;
+//
+$btn-basic: $color-Three;
+$btn-basic-hover: $color-Two;
+$btn-basic-home: $color-One;
 // nav
-$nav-bg-nav: #303c6c;
-$nav-bg-progress-bar: #97c13a;
+$nav-bg-nav: $color-Two;
+$nav-bg-progress-bar: $color-Three;
 // home
-$home-bg-carousel_control_style: #28c6c6;
-$home-bg-carousel_control_style-color: #515660;
-$home-bg-h_news: #28c6c6;
-$home-bg-h_news_btn: #515660;
-$home-bg-h_about: #28c6c6;
+$home-bg-carousel_control_style: $color-four;
+$home-bg-carousel_control_style-color: $color-One;
+$home-bg-h_news: $btn-basic;
+$home-bg-h_news_btn: $color-One;
+$home-bg-h_about: $btn-basic-hover;
 
 // about
-$about-color-border-row-team: #303c6c;
-$about-color-border-row-team-RandB: #97c13a;
+$about-color-border-row-team: $color-Two;
+$about-color-border-row-team-RandB: $color-four;
+$about-bg-svg: #888;
 
 // technic
-$technic-clor-sec-right: #97c13a;
+$technic-clor-sec-right: $color-Three;
 //course
-$cours-bg-owl: #28c6c6;
-$cours-bg-owl-hover: #303c6c;
+$cours-bg-owl: $color-four;
+$cours-bg-owl-hover: $color-Two;
 // footer
-$footer-bg-footer: #97c13a;
-$footer-bg-footer-end: #515660;
+$footer-bg-footer: $color-Three;
+$footer-bg-footer-end: $color-One;
 
 $color-grey-light-1: #f9f5f3; // Light background
 $color-grey-light-2: #f2efee; // Light lines

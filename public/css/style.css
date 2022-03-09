@@ -119,7 +119,7 @@ select {
   margin-top: 20px;
   font-size: 30px;
   font-weight: bold;
-  background: #515660;
+  background: #781d42;
 }
 .header_m p {
   padding-right: 40px;
@@ -326,7 +326,7 @@ select {
   z-index: 100;
   width: 100%;
   max-height: 68px;
-  background-color: #303c6c !important;
+  background-color: #a3423c !important;
 }
 .navbar .navbar-collapse {
   padding-left: 20%;
@@ -380,7 +380,7 @@ select {
   left: 44%;
 }
 .navbar .logo_uni img {
-  background-color: #303c6c;
+  background-color: #a3423c;
   max-width: 100px;
   max-height: 100px;
   padding-bottom: 10px;
@@ -390,7 +390,7 @@ select {
   height: 0;
   border-style: solid;
   border-width: 0 52px 52px 0;
-  border-color: transparent #303c6c transparent transparent;
+  border-color: transparent #a3423c transparent transparent;
   margin-top: 48px;
 }
 .navbar .logo_uni .logo_uni_right {
@@ -398,7 +398,7 @@ select {
   height: 0;
   border-style: solid;
   border-width: 52px 52px 0 0;
-  border-color: #303c6c transparent transparent transparent;
+  border-color: #a3423c transparent transparent transparent;
   margin-top: 48px;
 }
 
@@ -418,7 +418,7 @@ select {
 }
 
 .progress-bar {
-  background-color: #97c13a;
+  background-color: #de834d;
   width: 0%;
   display: block;
   height: inherit;
@@ -466,7 +466,7 @@ select {
   }
 }
 .h_btn {
-  background: #515660;
+  background: #781d42;
   color: #f2efee;
 }
 .h_btn:hover {
@@ -491,7 +491,7 @@ select {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #28c6c6;
+  background: #f0d290;
 }
 .carousel .carousel_control_style_R::after {
   content: "";
@@ -502,13 +502,13 @@ select {
   margin-left: 10px;
   border-style: solid;
   border-width: 10px 0 10px 25px;
-  border-color: transparent transparent transparent #515660;
+  border-color: transparent transparent transparent #781d42;
 }
 .carousel .carousel_control_style_L {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #28c6c6;
+  background: #f0d290;
 }
 .carousel .carousel_control_style_L::after {
   content: "";
@@ -519,16 +519,16 @@ select {
   height: 0;
   border-style: solid;
   border-width: 10px 25px 10px 0;
-  border-color: transparent #515660 transparent transparent;
+  border-color: transparent #781d42 transparent transparent;
 }
 .carousel .carousel-indicators [data-bs-target] {
   width: 15px;
   height: 5px;
   border-radius: 50%;
-  background: #28c6c6;
+  background: #f0d290;
 }
 .carousel .carousel-indicators .active {
-  background: #515660;
+  background: #781d42;
 }
 .carousel .carousel-caption {
   background: rgba(0, 0, 0, 0.6);
@@ -577,11 +577,11 @@ select {
 }
 .h_news a {
   direction: rtl;
-  background: #28c6c6;
+  background: #de834d;
   color: #f2efee;
 }
 .h_news .btn:hover {
-  background-color: #303c6c !important;
+  background-color: #a3423c !important;
 }
 
 .activity_audio {
@@ -617,6 +617,11 @@ select {
 }
 .row .row_header {
   margin-top: 25px;
+}
+.row .ih-item.circle.effect1 .spinner {
+  border: 10px solid #a3423c;
+  border-right-color: #f0d290;
+  border-bottom-color: #f0d290;
 }
 
 .spic-title-about {
@@ -698,9 +703,13 @@ select {
   color: #6c757d;
 }
 .contactUs_main .form_contact_us button {
-  border: 1px solid #999;
-  background: #999;
+  color: #f2efee;
+  border: 1px solid #de834d;
+  background: #de834d;
   margin-bottom: 10px;
+}
+.contactUs_main .form_contact_us button:hover {
+  background: #a3423c;
 }
 .contactUs_main .img_form_cnatact {
   display: flex;
@@ -782,7 +791,7 @@ select {
   min-height: 350px;
 }
 .courses .course_articel .card h5 {
-  color: #777;
+  color: #918581;
   font-size: 10px;
 }
 .courses .course_articel .card p {
@@ -791,10 +800,10 @@ select {
 }
 .courses .course_articel .card a {
   direction: rtl;
-  background: #303c6c;
+  background: #de834d;
 }
 .courses .course_articel .card a:hover {
-  background: #28c6c6;
+  background: #a3423c;
 }
 
 .item img {
@@ -807,13 +816,13 @@ select {
 
 .owl-prev,
 .owl-next {
-  color: #28c6c6 !important;
+  color: #f0d290 !important;
   font-size: 40px !important;
   transition: all 0.5s;
 }
 .owl-prev:hover,
 .owl-next:hover {
-  color: #303c6c !important;
+  color: #a3423c !important;
 }
 
 @media screen and (max-width: 1000px) {
@@ -825,10 +834,12 @@ select {
   padding-left: 50px;
 }
 .sec-right h2 {
-  color: #97c13a;
+  color: #de834d;
 }
 .sec-right .header_tec {
   font-size: 22px;
+  font-family: "vazir";
+  font-variant: none;
 }
 .sec-right .logo_tecknick {
   padding: 30px 0 50px;
@@ -839,7 +850,7 @@ select {
 .sec-right .tec_link_btn {
   margin: 0 26px 13px;
   font-size: 30px;
-  background: #97c13a;
+  background: #de834d;
   color: #f2efee;
   position: relative;
   height: auto;
@@ -857,7 +868,7 @@ select {
   height: 0;
   border-top: 21px solid transparent;
   border-bottom: 21px solid transparent;
-  border-right: 17px solid #97c13a;
+  border-right: 17px solid #de834d;
   left: -17px;
   top: 0;
 }
@@ -868,7 +879,7 @@ select {
   height: 0;
   border-top: 21px solid transparent;
   border-bottom: 21px solid transparent;
-  border-left: 17px solid #97c13a;
+  border-left: 17px solid #de834d;
   right: -17px;
   top: 0;
 }
@@ -904,17 +915,16 @@ select {
   font-family: "vazir";
   font-size: 14px;
   font-weight: 400;
-  color: #999;
+  color: #918581;
 }
 .tec_list .card a {
   justify-content: center;
   align-content: center;
-  background: rgba(225, 225, 225, 0.9);
-  color: #222;
+  background: #de834d;
+  color: #f2efee;
 }
 .tec_list .card a:hover {
-  background: rgba(0, 225, 225, 0.2);
-  color: #555;
+  background: #a3423c;
 }
 
 .blog_main {
@@ -948,9 +958,10 @@ select {
   border-radius: 10px;
 }
 .blog_main .blog_text h4 {
+  direction: rtl;
   color: #f9f5f3;
   padding: 20px;
-  text-align: end;
+  text-align: justify;
   font-size: 25px;
   font-weight: 400;
 }
@@ -995,6 +1006,31 @@ select {
   display: inline-block;
   color: #918581;
 }
+.blog_description .blog_imgs_descrip {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+.blog_description .blog_imgs_descrip img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+}
+.blog_description .blog_video_descrip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.blog_description .blog_video_descrip video {
+  width: 50%;
+  max-height: 400px;
+}
 
 .bg-blog {
   position: absolute;
@@ -1017,7 +1053,7 @@ select {
 
 .section_footer {
   width: 100%;
-  background-color: #97c13a;
+  background-color: #de834d;
 }
 .section_footer .footer_body {
   width: 100%;
@@ -1095,7 +1131,7 @@ select {
 .footer-end {
   width: 100%;
   text-align: center;
-  background: #515660 !important;
+  background: #781d42 !important;
   padding: 10px;
 }
 .footer-end p {

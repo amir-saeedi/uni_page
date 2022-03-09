@@ -8,11 +8,11 @@
   .row_header {
     margin-top: 25px;
   }
-  // .ih-item.circle.effect1 .spinner {
-  //   border: 10px solid $about-color-border-row-team;
-  //   border-right-color: $about-color-border-row-team-RandB;
-  //   border-bottom-color: $about-color-border-row-team-RandB;
-  // }
+  .ih-item.circle.effect1 .spinner {
+    border: 10px solid $about-color-border-row-team;
+    border-right-color: $about-color-border-row-team-RandB;
+    border-bottom-color: $about-color-border-row-team-RandB;
+  }
 }
 .spic-title-about {
   font-family: "vazir";
@@ -94,16 +94,20 @@
       color: $color-grey-dark-4;
     }
     button {
-      border: 1px solid #999;
-      background: #999;
+      color: $color-grey-light-2;
+      border: 1px solid $btn-basic;
+      background: $btn-basic;
       margin-bottom: 10px;
+      &:hover {
+        background: $btn-basic-hover;
+      }
     }
   }
   .img_form_cnatact {
     // width: 60%;
     display: flex;
     align-items: center;
-    background: #888;
+    background: $about-bg-svg;
     border-radius: 10px;
     padding: 20px;
     img {

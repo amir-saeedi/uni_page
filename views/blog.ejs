@@ -1,104 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <%- include("links.ejs") %>
+
+<head>
+  <%- include("partials/links.ejs") %>
     <title>وبلاگ</title>
-  </head>
-  <body>
-    <!-- nav bar -->
-    <%- include("navbar.ejs") %>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <%- include("partials/navbar.ejs") %>
     <!-- main -->
     <header id="blog_header" class="header header_m text-light">
       <p>اخبار . . .</p>
-      <div style="overflow: hidden">
-        <svg
-          preserveAspectRatio="none"
-          viewBox="0 0 1200 120"
-          xmlns="http://www.w3.org/2000/svg"
-          style="
-            fill: #7ffa52;
-            width: 100%;
-            height: 60px;
-            transform: rotate(180deg) scaleX(-1);
-          "
-        >
-          <path
-            d="M0 0v46.29c47.79 22.2 103.59 32.17 158 28 70.36-5.37 136.33-33.31 206.8-37.5 73.84-4.36 147.54 16.88 218.2 35.26 69.27 18 138.3 24.88 209.4 13.08 36.15-6 69.85-17.84 104.45-29.34C989.49 25 1113-14.29 1200 52.47V0z"
-            opacity=".25"
-          />
-          <path
-            d="M0 0v15.81c13 21.11 27.64 41.05 47.69 56.24C99.41 111.27 165 111 224.58 91.58c31.15-10.15 60.09-26.07 89.67-39.8 40.92-19 84.73-46 130.83-49.67 36.26-2.85 70.9 9.42 98.6 31.56 31.77 25.39 62.32 62 103.63 73 40.44 10.79 81.35-6.69 119.13-24.28s75.16-39 116.92-43.05c59.73-5.85 113.28 22.88 168.9 38.84 30.2 8.66 59 6.17 87.09-7.5 22.43-10.89 48-26.93 60.65-49.24V0z"
-            opacity=".5"
-          />
-          <path
-            d="M0 0v5.63C149.93 59 314.09 71.32 475.83 42.57c43-7.64 84.23-20.12 127.61-26.46 59-8.63 112.48 12.24 165.56 35.4C827.93 77.22 886 95.24 951.2 90c86.53-7 172.46-45.71 248.8-84.81V0z"
-          />
-        </svg>
-      </div>
+      <%- include("partials/divider.ejs") %>
     </header>
     <section id="blog" class="section blog blog_section">
       <div class="bg-blog"></div>
 
       <!-- part 1 -->
 
-      <article
-        class="blog_article blog_right animate__animated"
-        style="opacity: 0"
-      >
+      <article class="blog_article blog_right animate__animated" style="opacity: 0">
         <div class="container main_container">
           <div class="blog_main blog_main_img-R">
             <div class="blog_text blog_text1">
               <h4 class="bolg_text_title bolg_text_title1">
-                سری اول نشریه تکنیک
+                همایش UNI TALK
               </h4>
               <p class="bolg_text_description1 bolg_text_description1">
-                ایجاد اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و
-                یجاد اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و
-                زمینه های اشتغال و… . همگی اینها گوشه ای از کارکردهای پنهان می
-                باشند که با در نظر گرفتن کارکردهای آشکار از جمله بازدید های
-                علمی، معارفه رشته، سمینار، همایش ها
+                بعد از دو سال...
+                <br>
+                بالاخره سلسله همایش های UNI-TALK آغاز شد
+                <br>
+                تیم UNI-TALK به طور مداوم همایش هایی با موضوع های متفاوت برگزار می کند. برگزار کننده این همایش ها، تیم
+                قوی و با انگیزه UNI-TALK می باشد که از خانواده کارنیک و انجمن علمی مکانیک خوارزمی تشکیل شده است .
                 <button class="btn blog_btn blog_btn_next" data-btn-blog="1">
                   ...ادامه
                 </button>
               </p>
             </div>
             <div class="blog_img">
-              <img
-                id="blog_img1"
-                src="/public/img/blog/blog1.png"
-                class="blog_img-m animate__animated animate__slow"
-                alt=""
-              />
+              <img id="blog_img1" src="/public/img/blog/blog1.png" class="blog_img-m animate__animated animate__slow"
+                alt="" />
             </div>
           </div>
           <div class="blog_description blog_description1" style="display: none">
-            <h4>سری اول نشریه تکنیک</h4>
+            <h4>همایش UNI TALK</h4>
             <p>
-              ایجاد اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و یجاد
-              اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و زمینه های
-              اشتغال و… . همگی اینها گوشه ای از کارکردهای پنهان می باشند که با
-              در نظر گرفتن کارکردهای آشکار از جمله بازدید های علمی، معارفه رشته،
-              سمینار، همایش ها
+              بعد از دو سال...
+              <br>
+              بالاخره سلسله همایش های UNI-TALK آغاز شد
+              <br>
+              تیم UNI-TALK به طور مداوم همایش هایی با موضوع های متفاوت برگزار می کند. برگزار کننده این همایش ها، تیم
+              قوی و با انگیزه UNI-TALK می باشد که از خانواده کارنیک و انجمن علمی مکانیک خوارزمی تشکیل شده است .
             </p>
+            <div class="blog_imgs_descrip">
+              <img src="/public/img/blog/images/news1/unitalk1.png" alt="">
+              <img src="/public/img/blog/images/news1/unitalk2.png" alt="">
+              <img src="/public/img/blog/images/news1/unitalk3.png" alt="">
+            </div>
             <p>
-              ایجاد اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و یجاد
-              اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و زمینه های
-              اشتغال و… . همگی اینها گوشه ای از کارکردهای پنهان می باشند که با
-              در نظر گرفتن کارکردهای آشکار از جمله بازدید های علمی، معارفه رشته،
-              سمینار، همایش ها
+              در اولین همایش که در تاریخ ۲۹ بهمن ۱۴۰۰ با موضوع کارآفرینی و کسب و کار برگزار شد، تیم ما افتخار میزبانی از
+              جناب آقای مهندس سید جلال حسینی خواه، جناب آقای دکتر علیرضا سلیمی و جناب آقای بابک بختیاری را داشت .
             </p>
+            <div class="blog_video_descrip">
+              <video controls>
+                <source src="/public/videos-blog/video_2022-03-09_11-01-02.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <video controls>
+                <source src="/public/videos-blog/video_2022-03-09_10-59-25.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
             <p>
-              ایجاد اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و یجاد
-              اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و زمینه های
-              اشتغال و… . همگی اینها گوشه ای از کارکردهای پنهان می باشند که با
-              در نظر گرفتن کارکردهای آشکار از جمله بازدید های علمی، معارفه رشته،
-              سمینار، همایش ها
-            </p>
-            <p>
-              ایجاد اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و یجاد
-              اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و زمینه های
-              اشتغال و… . همگی اینها گوشه ای از کارکردهای پنهان می باشند که با
-              از جمله بازدید های علمی، معارفه رشته، سمینار، همایش ها
               <button class="btn blog_btn blog_btn_close" data-btn-blog="1">
                 بستن
               </button>
@@ -109,63 +83,51 @@
 
       <!--  part 2 -->
 
-      <article
-        class="blog_article blog_left animate__animated"
-        style="opacity: 0"
-      >
+      <article class="blog_article blog_left animate__animated" style="opacity: 0">
         <div class="container main_container">
           <div class="blog_main blog_main_img-L">
             <div class="blog_img">
-              <img
-                id="blog_img2"
-                src="/public/img/blog/blog2.png"
-                class="blog_img-m animate__animated animate__slow"
-                alt=""
-              />
+              <img id="blog_img2" src="/public/img/blog/blog2.png" class="blog_img-m animate__animated animate__slow"
+                alt="" />
             </div>
             <div class="blog_text blog_text2">
-              <h4 class="bolg_text_title bolg_text_title2">تایتل خبر دو</h4>
+              <h4 class="bolg_text_title bolg_text_title2">نشریه تکنیک سری 1</h4>
               <p class="bolg_text_description bolg_text_description2">
-                ایجاد اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و
-                یجاد اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و
-                زمینه های اشتغال و… . همگی اینها گوشه ای از کارکردهای پنهان می
-                باشند که با در نظر گرفتن کارکردهای آشکار از جمله بازدید های
-                علمی، معارفه رشته، سمینار، همایش ها<span
-                  ><button class="btn blog_btn" data-btn-blog="2">
+                در این جلد از نشریه تکنیک میخوانیم :
+                <br>
+                معرفی نرم افزار solidworks و دستگاه cnc، بررسی خودرویی که قصد ندارد به سادگی از دسته ی خودروهای اسپرت
+                خارج شود، کاربرد های مهندسی ها در رباتیک و همچنین مصاحبه ی اختصاصی با شرکت مهندسی بندگار جم را داریم
+                <span><button class="btn blog_btn" data-btn-blog="2">
                     ...ادامه
-                  </button></span
-                >
+                  </button></span>
               </p>
             </div>
           </div>
           <div class="blog_description blog_description2" style="display: none">
-            <h4>تایتل خبر یک</h4>
+            <h4>نشریه تکنیک سری 1</h4>
             <p>
-              ایجاد اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و یجاد
-              اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و زمینه های
-              اشتغال و… . همگی اینها گوشه ای از کارکردهای پنهان می باشند که با
-              در نظر گرفتن کارکردهای آشکار از جمله بازدید های علمی، معارفه رشته،
-              سمینار، همایش ها
+              در این جلد از نشریه تکنیک میخوانیم :
+              <br>
+              معرفی نرم افزار solidworks و دستگاه cnc، بررسی خودرویی که قصد ندارد به سادگی از دسته ی خودروهای اسپرت
+              خارج شود، کاربرد های مهندسی ها در رباتیک و همچنین مصاحبه ی اختصاصی با شرکت مهندسی بندگار جم را داریم
+            </p>
+            <div class="blog_imgs_descrip">
+              <img src="/public/img/blog/images/news2/technic1.jpg" alt="">
+              <img src="/public/img/blog/images/news2/technic2.jpg" alt="">
+              <img src="/public/img/blog/images/news2/technic3.jpg" alt="">
+            </div>
+            <p>
+              در نهایت در بخش تکنیک پلاس با بخش های زیر همراه هستیم :
+              <br>
+              اطلاعات دانشجویی و معرفی دانشگاه های برتر جهان، معرفی سایت ها و نرم افزار های کاربردی و همچنین بخش جذاب
+              معرفی کتاب .
+              <br>
+              در انتهای این سری از نشریه تکنیک با بخش هیجان انگیز مسابقه به همراه جوایز ویژه همراه شما هستیم
+              <br>
+              برای مشاهده ی این نسخه از نشریه روی <a href="/public/Technic/Technic - Serie 1.pdf">این لینک</a> و برای
+              دیدن تمامی نسخه های نشریه تکنیک روی <a href="./technic">لینک</a> کلیک کنید
             </p>
             <p>
-              ایجاد اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و یجاد
-              اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و زمینه های
-              اشتغال و… . همگی اینها گوشه ای از کارکردهای پنهان می باشند که با
-              در نظر گرفتن کارکردهای آشکار از جمله بازدید های علمی، معارفه رشته،
-              سمینار، همایش ها
-            </p>
-            <p>
-              ایجاد اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و یجاد
-              اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و زمینه های
-              اشتغال و… . همگی اینها گوشه ای از کارکردهای پنهان می باشند که با
-              در نظر گرفتن کارکردهای آشکار از جمله بازدید های علمی، معارفه رشته،
-              سمینار، همایش ها
-            </p>
-            <p>
-              ایجاد اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و یجاد
-              اعتماد به نفس، نظم، تبادل اندیشه، مهارت های کارگروهی و زمینه های
-              اشتغال و… . همگی اینها گوشه ای از کارکردهای پنهان می باشند که با
-              از جمله بازدید های علمی، معارفه رشته، سمینار، همایش ها
               <button class="btn blog_btn blog_btn_close" data-btn-blog="2">
                 بستن
               </button>
@@ -310,6 +272,7 @@
       </article> -->
     </section>
     <!-- footer -->
-    <%- include("footer.ejs") %>
-  </body>
+    <%- include("partials/footer.ejs") %>
+</body>
+
 </html>

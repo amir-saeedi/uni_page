@@ -71,7 +71,7 @@
         min-height: 350px;
       }
       h5 {
-        color: #777;
+        color: $color-grey-dark-3;
         font-size: 10px;
       }
       p {
@@ -80,9 +80,9 @@
       }
       a {
         direction: rtl;
-        background: $cours-bg-owl-hover;
+        background: $btn-basic;
         &:hover {
-          background: $cours-bg-owl;
+          background: $btn-basic-hover;
         }
       }
     }

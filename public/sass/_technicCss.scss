@@ -5,6 +5,8 @@
   }
   .header_tec {
     font-size: 22px;
+    font-family: "vazir";
+    font-variant: none;
   }
   .logo_tecknick {
     padding: 30px 0 50px;
@@ -79,16 +81,15 @@
       font-family: "vazir";
       font-size: 14px;
       font-weight: 400;
-      color: #999;
+      color: $color-grey-dark-3;
     }
     a {
       justify-content: center;
       align-content: center;
-      background: rgba(225, 225, 225, 0.9);
-      color: #222;
+      background: $btn-basic;
+      color: $color-grey-light-2;
       &:hover {
-        background: rgba(0, 225, 225, 0.2);
-        color: #555;
+        background: $btn-basic-hover;
       }
     }
   }
