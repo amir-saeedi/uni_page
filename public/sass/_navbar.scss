@@ -1,7 +1,7 @@
 .navbar {
   position: relative;
   position: fixed;
-  z-index: 100;
+  z-index: 99;
   width: 100%;
   max-height: 68px;
   background-color: $nav-bg-nav !important;
@@ -18,11 +18,41 @@
       white-space: nowrap;
       .nav-link {
         color: $color-grey-light-2;
-        font-size: 20px;
+        font-size: 18px;
       }
     }
     .nav__link {
       transition: 0.5s all;
+    }
+    .dropdown-menu {
+      background: rgba($nav-bg-nav, 0.8);
+      direction: rtl;
+      border: none;
+      text-align: center;
+      transition: all 0.5s;
+      li {
+        direction: rtl;
+        // list-style: inside;
+        &::marker {
+          color: $color-grey-dark-1;
+          font-size: 15px;
+        }
+        .dropdown-item {
+          display: inline-block;
+          transition: all 0.2s;
+          border-radius: 10px;
+          font-size: 16px;
+          color: $color-grey-light-2;
+          &:hover {
+            // background: rgba(#555, 1);
+            background: none;
+            color: $color-grey-light-3;
+          }
+        }
+      }
+    }
+    .nav_logo_sm {
+      display: none;
     }
   }
   .container-fluid {
@@ -34,16 +64,15 @@
       align-content: center;
       align-items: center;
       img {
-        width: 22%;
+        width: 29%;
       }
       .nav_logo_text {
-        z-index: 10;
         p {
-          font-size: 1.5rem;
+          font-size: 1.8rem;
           color: $color-grey-light-2;
-          text-align: end;
+          text-align: center;
           white-space: nowrap;
-          font-weight: 300;
+          font-weight: 600;
 
           span {
             display: block;
@@ -84,13 +113,12 @@
     }
   }
 }
-
 .fixed-top {
   position: fixed;
   top: 68px;
   right: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 98;
 }
 .progress-container {
   width: 100%;
@@ -109,7 +137,7 @@
   .navbar {
     max-height: none;
     .logo_uni {
-      top: 5px;
+      display: none;
       left: 50%;
       right: 40%;
       img {
@@ -117,6 +145,9 @@
         max-height: 80px;
       }
     }
+  }
+  .nav_logo {
+    padding-left: 20px;
   }
   .nav_logo_img {
     display: none;
@@ -127,10 +158,24 @@
     margin-top: 10px;
   }
   .navbar-collapse {
+    width: 100%;
     padding-left: 0 !important;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0px !important;
+    direction: rtl;
     .navbar-nav {
       display: flex;
       flex-direction: column !important;
+    }
+    .nav_logo_sm {
+      display: block !important;
+      margin: 0 13%;
+      // padding-left: 50px;
+      img {
+        max-width: 100px;
+        max-height: 100px;
+      }
     }
   }
   .logo_uni_left,
@@ -138,6 +183,20 @@
     display: none;
   }
   .fixed-top {
-    top: 99px;
+    z-index: 100;
+    top: 107px;
+  }
+  .dropdown-menu {
+    text-align: justify !important;
+    li {
+      list-style: inside;
+      .dropdown-item {
+        color: $color-grey-light-3 !important;
+        &:hover {
+          background: rgba(#555, 1);
+          color: $color-grey-light-2 !important;
+        }
+      }
+    }
   }
 }

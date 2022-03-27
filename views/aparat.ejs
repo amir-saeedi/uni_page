@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("partials/links.ejs") %>
+        <title>آپارات</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <%- include("partials/navbar.ejs") %>
+        <!-- main -->
+        <header id="َAparat_header" class="header header_m text-light">
+            <p>ویدو های درسی . . .</p>
+            <%- include("partials/divider.ejs") %>
+        </header>
+        <!--  -->
+        <div class="aparat-background">
+            <section class="aparat_search">
+                <div class="aparat_search_box">
+                    <form class="aparat-form">
+                        <label for="aparatDataList" class="form-label">نام درس</label>
+                        <input class="form-control" list="datalistOptions" id="aparatDataList"
+                            placeholder="Type to search...">
+                        <datalist id="datalistOptions">
+                        </datalist>
+                    </form>
+                </div>
+            </section>
+            <section class="section aparat_section animate__animated animate__backInUp">
+                <div class="drag">
+                    <div class="drag_items">
+                        <!--  -->
+                    </div>
+                    <section>
+                        <a href="https://www.aparat.com/mech_khu">
+                            <button class="btn aparat_btn">همه ویدو ها</button>
+                        </a>
+                    </section>
+                </div>
+            </section>
+            <div class="bg-aparat"></div>
+        </div>
+        <!-- footer -->
+        <%- include("partials/footer.ejs") %>
+</body>

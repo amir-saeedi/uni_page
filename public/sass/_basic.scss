@@ -6,10 +6,10 @@ $color-grad-2: #f48982;
 // f5f2f2 and #515660, #303c6c, #97c13a, #28c6c6 =>step1
 // f5f2f2 and #9ADCFF, #FFF89A, #FFB2A6, #FF8AAE =>step2
 // f5f2f2 and #781D42, #A3423C, #DE834D, #F0D290 =>step3
-$color-One: #781d42;
-$color-Two: #a3423c;
-$color-Three: #de834d;
-$color-four: #f0d290;
+$color-One: #3d3d3d;
+$color-Two: #6059f7;
+$color-Three: #36c3fe;
+$color-four: #8c61ff;
 //
 $bg-color-body: #f5f2f2;
 $bg-header-section: $color-One;
@@ -75,6 +75,7 @@ $bp-smallest: 31.25em; // 500px
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 *,
@@ -180,6 +181,7 @@ select {
 }
 .section {
   position: relative;
+  z-index: 1;
   text-align: center;
   padding-top: 30px;
   h2 {
@@ -206,4 +208,11 @@ select {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 480px) {
+  .section {
+    h2 {
+      font-size: 17px;
+    }
+  }
 }

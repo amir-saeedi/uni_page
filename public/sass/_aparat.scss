@@ -1,0 +1,162 @@
+.aparat-background {
+  position: relative;
+}
+.aparat_search {
+  position: relative;
+  z-index: 10;
+  direction: rtl;
+  text-align: start;
+  width: 100%;
+  padding-top: 20px;
+  padding-right: 40px;
+  .aparat_search_box {
+    width: 200px;
+    label {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: "vazir";
+    }
+    input {
+      padding: 10px;
+      font-size: 13px;
+    }
+  }
+}
+.drag {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding-bottom: 10px;
+  gap: 20px;
+}
+
+.drag_items {
+  display: flex;
+  height: 500px;
+  padding: 100px 40%;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+  // background: rgba(255, 255, 255, 0.1);
+  font-size: 0;
+  perspective: 500px;
+}
+
+.drag_items.active {
+  // background: rgba(255, 255, 255, 0.3);
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
+}
+
+.drag_item {
+  min-width: 200px;
+  height: calc(100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+  // filter: blur(8px);
+  color: rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0 0 7px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  img {
+    width: 300%;
+    height: 300px;
+  }
+}
+.aparat_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-width: 100%;
+  min-height: 100%;
+  &:hover {
+    color: initial;
+  }
+}
+.aparat_text {
+  h3 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+  h6 {
+    font-size: 0.8rem;
+    color: #666;
+  }
+}
+.aparat_btn {
+  display: block;
+  background: blueviolet;
+  color: $color-grey-light-2 !important;
+}
+.drag_item:nth-child(9n + 1) {
+  background: dodgerblue;
+}
+.drag_item:nth-child(9n + 2) {
+  background: goldenrod;
+}
+.drag_item:nth-child(9n + 3) {
+  background: paleturquoise;
+}
+.drag_item:nth-child(9n + 4) {
+  background: gold;
+}
+.drag_item:nth-child(9n + 5) {
+  background: cadetblue;
+}
+.drag_item:nth-child(9n + 6) {
+  background: tomato;
+}
+.drag_item:nth-child(9n + 7) {
+  background: lightcoral;
+}
+.drag_item:nth-child(9n + 8) {
+  background: darkslateblue;
+}
+.drag_item:nth-child(9n + 9) {
+  background: rebeccapurple;
+}
+
+.drag_item:nth-child(even) {
+  transform: scaleX(1.31) rotateY(40deg);
+}
+.drag_item:nth-child(odd) {
+  transform: scaleX(1.31) rotateY(-40deg);
+}
+@media screen and (max-width: 480px) {
+  .drag_items {
+    height: 400px;
+  }
+  .drag_item {
+    min-width: 140px;
+  }
+}
+.bg-aparat {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/public/img/aparat/undraw_learning_-2-q1h.svg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  opacity: 0.1;
+  z-index: 0;
+}
