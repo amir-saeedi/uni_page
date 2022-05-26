@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <%- include("partials/links.ejs") %>
+        <title>درباره ی ما</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <%- include("partials/navbar.ejs") %>
+        <!-- main -->
+        <header class="contactT">
+            <div class="contact_main">
+                <h3>جلسه ی پرسش و پاسخ کارآفرینی و ارتباط با صنعت با حضور مهندس شهریار طاهری</h2>
+                    <h5>سوالاتی که در رابطه با کارآفرینی و یا ارتباط با صنعت ذهنتون رو مشغول کرده رو با ما در میان
+                        بزارید
+                        تا روز یکشنبه در جلسه مطرح شوند.
+                    </h5>
+                    <form action="/contact" method="POST">
+                        <input type="text" name="name" autocomplete="off" placeholder="نام" required>
+                        <textarea name="qustion" id="qustion" required></textarea>
+                        <button class="btn" type="submit">ارسال</button>
+                    </form>
+            </div>
+            <div class="contact-blur"></div>
+        </header>
+</body>

@@ -26,7 +26,7 @@
         max-height: 200px;
       }
       p {
-        font-size: 15px;
+        font-size: $font-size-small;
         color: $color-grey-light-2;
         a {
           color: $color-grey-light-2;
@@ -34,7 +34,7 @@
       }
       a {
         i {
-          font-size: 35px;
+          font-size: $font-size-XXlarg;
           padding: 0 20px;
           color: $color-grey-light-2;
         }
@@ -57,7 +57,7 @@
           display: flex;
           flex-direction: column;
           align-items: center;
-          font-size: 12px;
+          font-size: $font-size-Xsmall;
           color: $color-grey-light-2;
           opacity: 0;
           top: -36px;
@@ -86,7 +86,7 @@
   padding: 10px;
   p {
     direction: ltr;
-    font-size: 12px;
+    font-size: $font-size-Xsmall;
     margin-bottom: 0 !important;
     color: $color-grey-light-3 !important;
     a {

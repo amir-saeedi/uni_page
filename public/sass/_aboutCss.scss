@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   p {
-    font-size: 25px;
+    font-size: $font-size-Xlarg;
   }
   .row_header {
     margin-top: 25px;
@@ -24,17 +24,24 @@
   p {
     text-align: justify;
     direction: rtl;
-    font-size: 18px;
+    font-size: $font-size-larg;
   }
 }
 .introduction_team {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex: 1;
   .team_description {
     h5 {
-      font-size: 18px;
+      font-size: $font-size-larg;
       color: $color-grey-dark-2;
     }
     P {
-      font-size: 10px;
+      font-size: $font-size-XXsmall;
       color: $color-grey-dark-4;
       cursor: pointer;
     }
@@ -54,7 +61,7 @@
   p {
     text-align: justify;
     direction: rtl;
-    font-size: 18px;
+    font-size: $font-size-larg;
     padding-top: 5px;
     span {
       padding-left: 8px;
@@ -85,12 +92,12 @@
     input,
     textarea {
       padding: 8px;
-      font-size: 15px;
+      font-size: $font-size-small;
       margin-bottom: 10px;
       color: $color-grey-dark-2;
     }
     label {
-      font-size: 16px;
+      font-size: $font-size-small;
       color: $color-grey-dark-4;
     }
     button {

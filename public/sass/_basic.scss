@@ -64,6 +64,13 @@ $bp-medium: 61.25em; // 980px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
 
+$font-size-XXlarg: 35px;
+$font-size-Xlarg: 25px;
+$font-size-larg: 18px;
+$font-size-small: 15px;
+$font-size-Xsmall: 12px;
+$font-size-XXsmall: 8px;
+
 @font-face {
   font-family: BalooBhaijaan;
   src: url(/public/font/BalooBhaijaan2-Medium.ttf);
@@ -136,7 +143,7 @@ a,
 li,
 label,
 button {
-  font-family: BalooBhaijaan, Bnazanin, tahoma;
+  font-family: BalooBhaijaan, tahoma;
 }
 hr {
   display: block;
@@ -160,11 +167,13 @@ input,
 select {
   vertical-align: middle;
 }
-
-* {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+.btn {
+  width: 100%;
+  padding: 12px 25px;
+  border-radius: 12px 25px;
+  font-size: 13px;
+  border: none;
+  text-align: start;
 }
 .header_m {
   text-align: right;

@@ -9,6 +9,7 @@ const path = require("path");
 const nodemailer = require("nodemailer");
 
 const Contactus = require("./models/contactus.js");
+const Qustionus = require("./models/qustions.js");
 //
 const emailSend = function (newContact) {
   async function main() {
@@ -30,7 +31,6 @@ const emailSend = function (newContact) {
         rejectUnauthorized: false,
       },
     });
-
     // send mail with defined transport object
     let info = await transporter.sendMail({
       from: "uni.khu2022@gmail.com", // sender address
@@ -93,6 +93,18 @@ app.get("/blog", (req, res) => {
 app.get("/aparat", (req, res) => {
   res.render("aparat");
 });
+app.get("/contact", (req, res) => {
+  res.render("contact");
+});
+app.post("/contact", async (req, res) => {
+  const newContact = new Qustionus(req.body);
+  await newContact.save();
+  // emailSend(newContact)
+  res.redirect("/");
+});
+// app.get("/conference", (req, res) => {
+//   res.render("conference");
+// });
 /////////
 app.listen(process.env.PORT || 1000, () => {
   console.log(`Listening on port ${process.env.PORT || 1000}`);

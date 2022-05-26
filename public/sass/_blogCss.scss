@@ -33,7 +33,7 @@
       color: $color-grey-light-1;
       padding: 20px;
       text-align: justify;
-      font-size: 25px;
+      font-size: $font-size-Xlarg;
       font-weight: 400;
     }
     p {
@@ -41,7 +41,7 @@
       padding: 20px;
       direction: rtl;
       color: $color-grey-light-2;
-      font-size: 16px;
+      font-size: $font-size-small;
       text-align: justify;
       .blog_btn {
         direction: ltr;
@@ -63,13 +63,13 @@
   padding: 20px;
   background: rgba(225, 225, 225, 0.7);
   h4 {
-    font-size: 30px;
+    font-size: $font-size-XXlarg;
     color: $color-grey-dark-2;
     text-align: center;
     padding: 25px;
   }
   p {
-    font-size: 16px;
+    font-size: $font-size-small;
     color: $color-grey-dark-1;
   }
   .blog_btn_close {

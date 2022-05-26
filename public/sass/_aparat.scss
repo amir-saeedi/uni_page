@@ -12,13 +12,13 @@
   .aparat_search_box {
     width: 200px;
     label {
-      font-size: 20px;
+      font-size: $font-size-larg;
       font-weight: bold;
       font-family: "vazir";
     }
     input {
       padding: 10px;
-      font-size: 13px;
+      font-size: $font-size-small;
     }
   }
 }
@@ -49,7 +49,6 @@
   will-change: transform;
   position: relative;
   // background: rgba(255, 255, 255, 0.1);
-  font-size: 0;
   perspective: 500px;
 }
 
@@ -89,13 +88,13 @@
 }
 .aparat_text {
   h3 {
-    font-size: 1.5rem;
+    font-size: $font-size-small;
   }
   h5 {
-    font-size: 1.2rem;
+    font-size: $font-size-Xsmall;
   }
   h6 {
-    font-size: 0.8rem;
+    font-size: $font-size-XXsmall;
     color: #666;
   }
 }

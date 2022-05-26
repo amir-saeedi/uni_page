@@ -1,24 +1,15 @@
 .navbar {
-  position: relative;
-  position: fixed;
   z-index: 99;
-  width: 100%;
-  max-height: 68px;
+  max-height: 80px;
   background-color: $nav-bg-nav !important;
-  // overflow: hidden;
   .navbar-collapse {
-    padding-left: 20%;
     flex-grow: 0;
-    .navbar-nav {
-      display: flex;
-      flex-direction: row-reverse;
-    }
     .nav-item {
-      padding: 0 6px;
+      padding: 0 5px;
       white-space: nowrap;
       .nav-link {
         color: $color-grey-light-2;
-        font-size: 18px;
+        font-size: $font-size-larg;
       }
     }
     .nav__link {
@@ -28,20 +19,18 @@
       background: rgba($nav-bg-nav, 0.8);
       direction: rtl;
       border: none;
-      text-align: center;
       transition: all 0.5s;
       li {
         direction: rtl;
         // list-style: inside;
         &::marker {
           color: $color-grey-dark-1;
-          font-size: 15px;
+          font-size: $font-size-small;
         }
         .dropdown-item {
-          display: inline-block;
           transition: all 0.2s;
           border-radius: 10px;
-          font-size: 16px;
+          font-size: $font-size-small;
           color: $color-grey-light-2;
           &:hover {
             // background: rgba(#555, 1);
@@ -68,7 +57,7 @@
       }
       .nav_logo_text {
         p {
-          font-size: 1.8rem;
+          font-size: $font-size-small;
           color: $color-grey-light-2;
           text-align: center;
           white-space: nowrap;
@@ -86,14 +75,13 @@
     // background: #fff;
     position: absolute;
     display: flex;
-    top: 10px;
-    right: 50%;
-    left: 44%;
+    top: 35%;
+    right: 45%;
     img {
       background-color: $nav-bg-nav;
       max-width: 100px;
       max-height: 100px;
-      padding-bottom: 10px;
+      padding-bottom: 2px;
     }
     .logo_uni_left {
       width: 0;

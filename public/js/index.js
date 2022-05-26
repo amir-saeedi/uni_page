@@ -1,19 +1,15 @@
-import {
-  navPadding,
-  fadeLogo,
-  fadeMenu,
-  scrollProgressBar,
-} from "./main/navbarJS.js";
+import { navPadding, fadeLogo, fadeMenu } from "./main/navbarJS.js";
 import homeJs from "./main/homeJs.js";
 import courseJs from "./main/courseJS.js";
 import blogJs from "./main/blogJs.js";
 import aparatJs from "./main/aparatJS.js";
-// import aboutJs from "./main/aboutJs.js";
-// import technicJs from "./main/technicJs.js";
+import aboutJs from "./main/aboutJs.js";
+import technicJs from "./main/technicJs.js";
 
 import owlJS from "./partials/owlJS.js";
 import mapJS from "./partials/mapJS.js";
 import loadImgJs from "./partials/loadImgJs.js";
+import { scrollProgressBar } from "./partials/scrollProgressBar.js";
 
 ///////////////////////////////////////////////
 // nav bar
@@ -29,10 +25,10 @@ if (document.getElementById("H_header")) {
   homeJs();
 } else if (document.getElementById("About_header")) {
   // about page
-  // aboutJs() ***
+  aboutJs();
 } else if (document.getElementById("technic_header")) {
   // technic page
-  // technicJs() ***
+  technicJs();
 } else if (document.getElementById("cours_header")) {
   // courses page
   courseJs();
@@ -49,4 +45,6 @@ owlJS();
 mapJS();
 // load images after all *
 loadImgJs();
-/////////////////////////////////////////////
+// scroll progress bar
+scrollProgressBar();
+///////////////////////////////////////////

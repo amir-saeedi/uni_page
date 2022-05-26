@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <%- include("partials/links.ejs") %>
+
+<head>
+  <%- include("partials/links.ejs") %>
     <title>رویدادها</title>
-  </head>
-  <body>
-    <!-- nav bar -->
-    <%- include("partials/navbar.ejs") %>
+</head>
+
+<body>
+  <!-- nav bar -->
+  <%- include("partials/navbar.ejs") %>
     <!-- main -->
-    <header
-      id="cours_header"
-      class="header header_m text-light"
-    >
-    <p>دوره ها . . .</p>
-    <%- include("partials/divider.ejs") %>
+    <header id="cours_header" class="header header_m text-light">
+      <p>دوره ها . . .</p>
+      <%- include("partials/divider.ejs") %>
     </header>
     <section id="special_courses" class="section special_courses courses_section animate__animated animate__backInUp">
       <div class="container main_container">
@@ -21,17 +20,19 @@
           <div class="sec-left">
             <div class="row">
               <div class="col-sm-6">
-             
+
                 <!-- normal -->
                 <div class="ih-item circle effect15 left_to_right"><a>
-                    <div class="img"><img src="/public/img/courses/cours.png"img"></div>
+                    <div class="img"><img src="/public/img/courses/cours.png" img"></div>
                     <div class="info">
                       <h3>دوره آموزش طراحی به صورت گرافیک و تدوین گری</h3>
                       <p></p>
-                    </div></a></div>
+                    </div>
+                  </a></div>
                 <!-- end normal -->
-             
-              </div></div>
+
+              </div>
+            </div>
           </div>
           <div class="sec-right">
             <p> رویـدادها و دوره های
@@ -40,8 +41,8 @@
               دانشـگاه خوارزمی
             </p>
             <img src="/public/img/logo/انجمن - سیاه.png" class="img-thumbnail" alt="">
+          </div>
         </div>
-      </div>
     </section>
     <section id="course" class="section course courses_section">
       <div class="container main_container">
@@ -61,8 +62,8 @@
                   <br>
                   💡-حل چند معادله چند مجهول و همچنین محاسبه جواب به صورت نمادی (Symbolic Calculation)
                   <br>
-                  و  بسیاری از ویژگی های محاسباتی مفید و ضروری دیگر بدون نیاز به برنامه نویسی
-                  
+                  و بسیاری از ویژگی های محاسباتی مفید و ضروری دیگر بدون نیاز به برنامه نویسی
+
                 </p>
                 <a class="btn btn-primary">ادامه . . .</a>
               </div>
@@ -105,19 +106,13 @@
     <section id="course_old" class="section course_old courses_section">
       <div class="container main_container">
         <h2 class="section_title" style="margin-bottom: 40px;">دوره ها و رویداد های برگزار شده</h2>
-          <div class="owl-carousel owl-theme">
-            <div class="item"><h4><img src="/public/img/courses/old cours/oldCours (1).jpg" alt=""></h4></div>
-            <div class="item"><h4><img src="/public/img/courses/old cours/oldCours (2).jpg" alt=""></h4></div>
-            <div class="item"><h4><img src="/public/img/courses/old cours/oldCours (3).jpg" alt=""></h4></div>
-            <div class="item"><h4><img src="/public/img/courses/old cours/oldCours (4).jpg" alt=""></h4></div>
-            <div class="item"><h4><img src="/public/img/courses/old cours/oldCours (5).jpg" alt=""></h4></div>
-            <div class="item"><h4><img src="/public/img/courses/old cours/oldCours (6).jpg" alt=""></h4></div>
-            <div class="item"><h4><img src="/public/img/courses/old cours/oldCours (7).jpg" alt=""></h4></div>
-            <div class="item"><h4><img src="/public/img/courses/old cours/oldCours (8).jpg" alt=""></h4></div>
+        <div class="owl-carousel owl-theme" id="OWL-carousel">
+          <!-- owl Code in JS -->
         </div>
       </div>
     </section>
     <!-- footer -->
     <%- include("partials/footer.ejs") %>
-  </body>
+</body>
+
 </html>

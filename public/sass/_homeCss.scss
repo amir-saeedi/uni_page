@@ -91,7 +91,7 @@
     h5 {
       direction: rtl;
       margin-top: 18%;
-      font-size: 32px;
+      font-size: $font-size-XXlarg;
       color: #ffffff;
     }
     p {
@@ -119,7 +119,7 @@
       color: $color-grey-dark-4;
     }
     .card-text {
-      font-size: 16px;
+      font-size: $font-size-small;
     }
     img {
       height: 350px;
@@ -152,7 +152,7 @@
   }
   p {
     color: $color-grey-dark-2;
-    font-size: 15px;
+    font-size: $font-size-small;
     text-align: center;
     direction: rtl;
   }
@@ -172,11 +172,11 @@
       display: block !important;
       height: 200px;
       h5 {
-        font-size: 12px;
+        font-size: $font-size-Xsmall;
       }
       p {
         font-weight: 400;
-        font-size: 7px;
+        font-size: $font-size-XXsmall;
       }
     }
   }

@@ -47,7 +47,8 @@ export default function () {
   `
   );
   slider.innerHTML = "";
-  slider.innerHTML = html;
+  // slider.innerHTML = html;
+  html.map((data) => slider.insertAdjacentHTML("afterbegin", data));
   ///////////////////////////////////////////
   // scroll section
   let isDown = false;

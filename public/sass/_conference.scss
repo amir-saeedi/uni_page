@@ -1,0 +1,154 @@
+.conferance {
+  background: linear-gradient(to right, #444, #e6e6e6);
+  img {
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: -1px -1px 1px #000;
+  }
+}
+
+.conference-about {
+  .about_main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    .about_main-img {
+      img {
+        width: 500px;
+        height: 500px;
+      }
+    }
+    .about_main-text {
+      padding: 0 30px;
+      display: flex;
+      flex-direction: column;
+      h3 {
+        padding: 40px 0;
+        font-size: 25px;
+        text-align: start;
+        direction: rtl;
+      }
+      ul {
+        height: 100%;
+        direction: rtl;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: start;
+        padding-bottom: 40px;
+        li {
+          direction: rtl;
+          font-size: 15px;
+          color: #555;
+        }
+      }
+    }
+  }
+  p {
+    font-size: 25px;
+    color: #111;
+    text-shadow: -1px -1px 1px #fff;
+  }
+}
+
+.conferance_top {
+  padding-top: 0;
+  margin: 20px;
+  h4 {
+    direction: rtl;
+  }
+  .conferance_container {
+    position: relative;
+    background: #fff;
+    border-radius: 45px 20px 20px 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 1px #777;
+    h1 {
+      padding: 20px 0;
+      font-weight: bold;
+    }
+    h3 {
+      padding: 15px 0;
+    }
+    p {
+      padding: 10px 0;
+    }
+    .discount_code {
+      position: absolute;
+      border-radius: 45px 0px 45px 0px;
+      top: 0%;
+      left: 0;
+      padding: 12px 5px;
+      background: #04eb04;
+      transform: rotate(1deg);
+      p {
+        margin-bottom: 0;
+        padding: 10px 0 0px;
+      }
+      span {
+        font-size: 12px;
+        color: #777;
+      }
+    }
+  }
+}
+.conference_teacher {
+  h3 {
+    padding-top: 30px;
+    direction: rtl;
+  }
+  .teacher-img {
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  .teacher-text {
+    ul {
+      height: 150px;
+      direction: rtl;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: start;
+      li {
+        direction: rtl;
+        font-size: 13px;
+        color: #777;
+        list-style: inside;
+      }
+    }
+  }
+}
+.conference_end {
+  padding-top: 20px;
+  h3 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  .conferenc_points {
+    padding: 30px 0;
+    ul {
+      direction: rtl;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      padding-left: 0;
+      li {
+        direction: rtl;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .about_main-text {
+    padding: 0 !important;
+    h3 {
+      font-size: 20px !important;
+    }
+  }
+}
