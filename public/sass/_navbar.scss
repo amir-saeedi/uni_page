@@ -75,29 +75,33 @@
     // background: #fff;
     position: absolute;
     display: flex;
-    top: 35%;
+    top: 25%;
     right: 45%;
     img {
       background-color: $nav-bg-nav;
       max-width: 100px;
-      max-height: 100px;
-      padding-bottom: 2px;
+      max-height: 90px;
+      border-radius: 10px;
+      padding: 0 10px 2px;
+      // padding-bottom: 2px;
     }
     .logo_uni_left {
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 0 52px 52px 0;
+      border-width: 0 52px 40px 0;
       border-color: transparent $nav-bg-nav transparent transparent;
       margin-top: 48px;
+      margin-right: -4px;
     }
     .logo_uni_right {
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 52px 52px 0 0;
+      border-width: 40px 52px 0 0;
       border-color: $nav-bg-nav transparent transparent transparent;
       margin-top: 48px;
+      margin-left: -4px;
     }
   }
 }

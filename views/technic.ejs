@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="/public/sass/css/technicBook.css">
 
 <head>
   <%- include("partials/links.ejs") %>
@@ -20,39 +19,7 @@
         <div class="special">
           <div class="sec-left">
             <!-- book stley -->
-            <div class="imgLoader"></div>
-            <div class="style">
-              <!-- <h1 class="title">Turning pages<br>with css</h1> -->
-              <!-- <div class="credit">   
-                * Images loaded randomly from Picsum.photos
-                </div>   -->
-              <div class="book">
-                <div class="gap"></div>
-                <div class="pages">
-                  <div class="page"></div>
-                  <div class="page"></div>
-                  <div class="page"></div>
-                  <div class="page"></div>
-                  <div class="page"></div>
-                  <div class="page"></div>
-                </div>
-                <div class="flips">
-                  <div class="flip flip1">
-                    <div class="flip flip2">
-                      <div class="flip flip3">
-                        <div class="flip flip4">
-                          <div class="flip flip5">
-                            <div class="flip flip6">
-                              <div class="flip flip7"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class='checkerboard' id="board"></div>
             <!--  -->
           </div>
           <div class="sec-right">
@@ -75,7 +42,8 @@
         <h2 class="section_title">معرفیه نشریه انجمن مکانیک دانشگاه خوارزمی</h2>
         <div class="tec_discription">
           <p>با روی کار آمدن اعضای جدید انجمن علمی-دانشجویی مهندسی مکانیک دانشگاه خوارزمی، پس از انتخابات شهریورماه 1400
-            و سیاست‌های جدید این انجمن علمی، نشریه تکنیک تحت نظارت آن در تاریخ 1/7/1400 تشکیل شد. در حال حاضر این نشریه
+            و سیاست‌های جدید این انجمن علمی، نشریه تکنیک تحت نظارت آن در تاریخ<b> 1400/7/1 </b> تشکیل شد. در حال حاضر
+            این نشریه
             به سردبیری حسام فروتنی و مدیر‌مسئولی ابوالفضل جعفری نعیمی، دانشجویان رشته مهندسی مکانیک دانشگاه خوارزمی در
             حال فعالیت است. استاد مشاور این نشریه جناب دکتر محمد سعادت بخش می‌باشند.</p>
           <p>اهداف نشریه تکنیک در راستای پیوند صنعت و دانشگاه بوده و تیم ما در هر شماره از این مجله تلاش نموده‌است که در

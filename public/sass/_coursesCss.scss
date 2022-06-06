@@ -1,11 +1,4 @@
-.special {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap-reverse;
-  gap: 200px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+.sec-left {
   .row {
     display: flex;
     align-content: center;
@@ -18,29 +11,6 @@
       border-radius: 10% !important;
       width: 150% !important;
       height: 150% !important;
-    }
-  }
-  .sec-right {
-    max-width: 400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    // padding-bottom: 20px;
-    padding-left: 0;
-    p {
-      // width: 50%;
-      font-size: 25px;
-      font-weight: 600;
-      line-height: 1.2;
-      margin-bottom: 40px;
-    }
-    img {
-      width: 250px;
-      height: 200px;
-      opacity: 0.8;
-      background: none;
-      border: none;
     }
   }
 }

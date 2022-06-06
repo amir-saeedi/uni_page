@@ -64,20 +64,42 @@ $bp-medium: 61.25em; // 980px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
 
-$font-size-XXlarg: 35px;
-$font-size-Xlarg: 25px;
-$font-size-larg: 18px;
-$font-size-small: 15px;
-$font-size-Xsmall: 12px;
-$font-size-XXsmall: 8px;
+// $font-size-XXlarg: 35px;
+// $font-size-Xlarg: 25px;
+// $font-size-larg: 18px;
+// $font-size-small: 15px;
+// $font-size-Xsmall: 12px;
+// $font-size-XXsmall: 8px;
+$font-size-XXlarg: 3rem;
+$font-size-Xlarg: 2.5rem;
+$font-size-larg: 1.7rem;
+$font-size-small: 1.5rem;
+$font-size-Xsmall: 1.2rem;
+$font-size-XXsmall: 0.7rem;
 
 @font-face {
-  font-family: BalooBhaijaan;
-  src: url(/public/font/BalooBhaijaan2-Medium.ttf);
+  font-family: iranyekanwebbold;
+  src: url(/public/font/iranYekan/iranyekanwebbold.woff);
 }
 @font-face {
-  font-family: vazir;
-  src: url(/public/font/Vazir-Regular.woff2);
+  font-family: iranyekanweblight;
+  src: url(/public/font/iranYekan/iranyekanweblight.woff);
+}
+@font-face {
+  font-family: iranyekanwebregular;
+  src: url(/public/font/iranYekan/iranyekanwebregular.woff);
+}
+@font-face {
+  font-family: robotobold;
+  src: url(/public/font/iranYekan/robotobold.woff);
+}
+@font-face {
+  font-family: robotolight;
+  src: url(/public/font/iranYekan/robotolight.woff);
+}
+@font-face {
+  font-family: robotoregular;
+  src: url(/public/font/iranYekan/robotoregular.woff);
 }
 * {
   margin: 0;
@@ -103,7 +125,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: vazir, tahoma;
+  font-family: iranyekanwebregular, tahoma;
   overflow-x: hidden;
   background: $bg-color-body;
   direction: ltr;
@@ -143,7 +165,7 @@ a,
 li,
 label,
 button {
-  font-family: BalooBhaijaan, tahoma;
+  font-family: iranyekanwebbold, tahoma;
 }
 hr {
   display: block;
@@ -222,6 +244,39 @@ select {
   .section {
     h2 {
       font-size: 17px;
+    }
+  }
+}
+.special {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 200px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  .sec-right {
+    max-width: 400px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    // padding-bottom: 20px;
+    padding-left: 0;
+    p {
+      // width: 50%;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 40px;
+    }
+    img {
+      height: 200px;
+      opacity: 0.8;
+      background: none;
+      border: none;
     }
   }
 }
