@@ -196,6 +196,7 @@ select {
   font-size: 13px;
   border: none;
   text-align: start;
+  transition: all 0.5s;
 }
 .header_m {
   text-align: right;
@@ -279,4 +280,30 @@ select {
       border: none;
     }
   }
+}
+//  input with lable animation
+.input {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent !important;
+  outline: 2px solid #444 !important;
+  &:focus + .input-label,
+  &:valid + .input-label {
+    transform: translate(-10px, -14px) scale(0.8);
+    color: #e8e5f7;
+    padding-inline: 5px;
+    background-color: #242329;
+    border-radius: 10px;
+  }
+  &:is(:focus, :valid) {
+    outline-color: #efecfc;
+  }
+}
+.input-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-28px, 10px);
+  transition: transform 0.25s;
 }

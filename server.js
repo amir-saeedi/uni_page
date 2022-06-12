@@ -75,12 +75,12 @@ app.get("/", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about");
 });
-app.post("/about", async (req, res) => {
-  const newContact = new Contactus(req.body);
-  await newContact.save();
-  emailSend(newContact);
-  res.redirect("/about");
-});
+// app.post("/about", async (req, res) => {
+//   const newContact = new Contactus(req.body);
+//   await newContact.save();
+//   emailSend(newContact);
+//   res.redirect("/about");
+// });
 app.get("/courses", (req, res) => {
   res.render("courses");
 });

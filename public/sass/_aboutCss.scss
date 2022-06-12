@@ -8,16 +8,15 @@
   .row_header {
     margin-top: 25px;
   }
-  .ih-item.circle.effect1 .spinner {
-    border: 10px solid $about-color-border-row-team;
-    border-right-color: $about-color-border-row-team-RandB;
-    border-bottom-color: $about-color-border-row-team-RandB;
-  }
+  // .ih-item.circle.effect1 .spinner {
+  //   border: 10px solid $about-color-border-row-team;
+  //   border-right-color: $about-color-border-row-team-RandB;
+  //   border-bottom-color: $about-color-border-row-team-RandB;
+  // }
 }
 .spic-title-about {
   font-family: iranyekanwebbold;
 }
-// style="text-align: end ;padding-top: 30px ;font-size: 16px;
 .text_About {
   padding-top: 30px;
 
@@ -91,10 +90,10 @@
     direction: rtl;
     input,
     textarea {
-      padding: 8px;
       font-size: $font-size-small;
       margin-bottom: 10px;
-      color: $color-grey-dark-2;
+      padding-right: 28px;
+      // color: $color-grey-dark-2;
       resize: none;
     }
     label {
@@ -110,9 +109,12 @@
         background: $btn-basic-hover;
       }
     }
+    & > div {
+      position: relative;
+      width: 100%;
+    }
   }
   .img_form_cnatact {
-    // width: 60%;
     display: flex;
     align-items: center;
     background: $about-bg-svg;

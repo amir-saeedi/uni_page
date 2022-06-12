@@ -131,6 +131,7 @@ select {
   font-size: 13px;
   border: none;
   text-align: start;
+  transition: all 0.5s;
 }
 
 .header_m {
@@ -215,6 +216,32 @@ select {
   opacity: 0.8;
   background: none;
   border: none;
+}
+
+.input {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent !important;
+  outline: 2px solid #444 !important;
+}
+.input:focus + .input-label, .input:valid + .input-label {
+  transform: translate(-10px, -14px) scale(0.8);
+  color: #e8e5f7;
+  padding-inline: 5px;
+  background-color: #242329;
+  border-radius: 10px;
+}
+.input:is(:focus, :valid) {
+  outline-color: #efecfc;
+}
+
+.input-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-28px, 10px);
+  transition: transform 0.25s;
 }
 
 .navbar {
@@ -539,9 +566,6 @@ select {
   background: #36c3fe;
   color: #f2efee;
 }
-.h_news .btn:hover {
-  background-color: #6059f7 !important;
-}
 
 .activity_audio {
   max-width: 600px;
@@ -587,11 +611,6 @@ select {
 }
 .row .row_header {
   margin-top: 25px;
-}
-.row .ih-item.circle.effect1 .spinner {
-  border: 10px solid #6059f7;
-  border-right-color: #8c61ff;
-  border-bottom-color: #8c61ff;
 }
 
 .spic-title-about {
@@ -672,10 +691,9 @@ select {
 }
 .contactUs_main .form_contact_us input,
 .contactUs_main .form_contact_us textarea {
-  padding: 8px;
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #615551;
+  padding-right: 28px;
   resize: none;
 }
 .contactUs_main .form_contact_us label {
@@ -690,6 +708,10 @@ select {
 }
 .contactUs_main .form_contact_us button:hover {
   background: #6059f7;
+}
+.contactUs_main .form_contact_us > div {
+  position: relative;
+  width: 100%;
 }
 .contactUs_main .img_form_cnatact {
   display: flex;
@@ -784,76 +806,76 @@ select {
   animation-delay: 4s;
 }
 .sec-left .checkerboard > div:nth-child(2) {
-  animation-delay: 2.4s;
+  animation-delay: 3s;
 }
 .sec-left .checkerboard > div:nth-child(3) {
-  animation-delay: 2.4s;
+  animation-delay: 1s;
 }
 .sec-left .checkerboard > div:nth-child(4) {
-  animation-delay: 1.2s;
+  animation-delay: 0.6s;
 }
 .sec-left .checkerboard > div:nth-child(5) {
-  animation-delay: 0.8s;
+  animation-delay: 5s;
 }
 .sec-left .checkerboard > div:nth-child(6) {
-  animation-delay: 2.2s;
+  animation-delay: 3.2s;
 }
 .sec-left .checkerboard > div:nth-child(7) {
-  animation-delay: 4.8s;
+  animation-delay: 2.8s;
 }
 .sec-left .checkerboard > div:nth-child(8) {
-  animation-delay: 0.4s;
+  animation-delay: 4.4s;
 }
 .sec-left .checkerboard > div:nth-child(9) {
-  animation-delay: 3s;
+  animation-delay: 3.2s;
 }
 .sec-left .checkerboard > div:nth-child(10) {
   animation-delay: 1s;
 }
 .sec-left .checkerboard > div:nth-child(11) {
-  animation-delay: 2.2s;
+  animation-delay: 4.2s;
 }
 .sec-left .checkerboard > div:nth-child(12) {
-  animation-delay: 1.8s;
+  animation-delay: 0.6s;
 }
 .sec-left .checkerboard > div:nth-child(13) {
-  animation-delay: 1s;
+  animation-delay: 4.8s;
 }
 .sec-left .checkerboard > div:nth-child(14) {
-  animation-delay: 2s;
+  animation-delay: 3.4s;
 }
 .sec-left .checkerboard > div:nth-child(15) {
-  animation-delay: 4s;
+  animation-delay: 2.6s;
 }
 .sec-left .checkerboard > div:nth-child(16) {
   animation-delay: 3.8s;
 }
 .sec-left .checkerboard > div:nth-child(17) {
-  animation-delay: 2.4s;
+  animation-delay: 5s;
 }
 .sec-left .checkerboard > div:nth-child(18) {
-  animation-delay: 2.6s;
-}
-.sec-left .checkerboard > div:nth-child(19) {
-  animation-delay: 2.4s;
-}
-.sec-left .checkerboard > div:nth-child(20) {
-  animation-delay: 3s;
-}
-.sec-left .checkerboard > div:nth-child(21) {
-  animation-delay: 2.8s;
-}
-.sec-left .checkerboard > div:nth-child(22) {
   animation-delay: 1.6s;
 }
-.sec-left .checkerboard > div:nth-child(23) {
-  animation-delay: 1s;
+.sec-left .checkerboard > div:nth-child(19) {
+  animation-delay: 4.8s;
 }
-.sec-left .checkerboard > div:nth-child(24) {
+.sec-left .checkerboard > div:nth-child(20) {
+  animation-delay: 0.4s;
+}
+.sec-left .checkerboard > div:nth-child(21) {
+  animation-delay: 0.8s;
+}
+.sec-left .checkerboard > div:nth-child(22) {
+  animation-delay: 2.2s;
+}
+.sec-left .checkerboard > div:nth-child(23) {
   animation-delay: 2.8s;
 }
+.sec-left .checkerboard > div:nth-child(24) {
+  animation-delay: 2s;
+}
 .sec-left .checkerboard > div:nth-child(25) {
-  animation-delay: 3.4s;
+  animation-delay: 2.6s;
 }
 .sec-left .checkerboard {
   background-image: url("/public/img/technic/technic/1.jpg");
@@ -865,8 +887,20 @@ select {
   width: 100%;
   width: 300px;
   height: 430px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px rgba(225, 225, 225, 0.3), -1px -1px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 1px #fff, -2px 1px 10px #000;
+  border-radius: 35px;
+}
+.sec-left .checkerboard > div:nth-child(1) {
+  border-radius: 20px 0 0 0;
+}
+.sec-left .checkerboard > div:nth-child(5) {
+  border-radius: 0 20px 0 0;
+}
+.sec-left .checkerboard > div:nth-child(21) {
+  border-radius: 0 0 0 20px;
+}
+.sec-left .checkerboard > div:nth-child(25) {
+  border-radius: 0 0 20px 0;
 }
 @media screen and (prefers-reduced-motion: no-preference) {
   .sec-left .checkerboard > div {
@@ -1595,8 +1629,9 @@ select {
   font-size: 1.2rem;
   color: #f2efee;
   opacity: 0;
-  top: -36px;
-  left: 24px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
   border-radius: 10px;
   transition: all 0.5s;
 }

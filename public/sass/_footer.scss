@@ -60,8 +60,9 @@
           font-size: $font-size-Xsmall;
           color: $color-grey-light-2;
           opacity: 0;
-          top: -36px;
-          left: 24px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -150%);
           border-radius: 10px;
           transition: all 0.5s;
           &::after {

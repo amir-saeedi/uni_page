@@ -63,14 +63,18 @@
         <p class="text-muted" style="margin-bottom: 30px;">شما میتوانید پیشنهاد ها و انتقاد های خود را با ما در میان
           بگذارید</p>
         <div class="contactUs_main">
-          <form action="/about" method="POST" class="form form_contact_us needs-validation" novalidate>
-            <label for="name" class="label-control">نام</label>
-            <input type="text" class="form-control" id="name" name="name" autocomplete="off" placeholder=""
-              maxlength="20" minlength="3" required>
-            <label for="email" class="label-control">ایمیل</label>
-            <input type="email" class="form-control" id="email" name="email" autocomplete="off"
-              placeholder="example: example@gmail.com" required>
-            <textarea name="description" class="form-control" type="text" id="description" cols="30" rows="4"
+          <!-- <form action="/about" method="POST" class="form form_contact_us needs-validation" novalidate> -->
+          <form action="https://formsubmit.co/uni.khu2022@gmail.com" method="POST"
+            class="form form_contact_us needs-validation" novalidate>
+            <div><input type="text" class="form-control input" id="name" name="name" autocomplete="off" placeholder=""
+                maxlength="20" minlength="3" required>
+              <label for="name" class="label-control input-label">نام</label>
+            </div>
+            <div>
+              <input type="email" class="form-control input" id="email" name="email" autocomplete="off" required>
+              <label for="email" class="label-control input-label">پست الکترونیک</label>
+            </div>
+            <textarea name="description" class="form-control input" type="text" id="description" cols="30" rows="4"
               placeholder="توضیحات..." required></textarea>
             <button class="btn submit_btn">ثبت</button>
           </form>

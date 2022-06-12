@@ -14,7 +14,8 @@ export default function () {
   const technicList = document.getElementById("technic-List");
   technicList.innerHTML = "";
   TechniHTML.map((e) => technicList.insertAdjacentHTML("afterbegin", e));
-  //
+  /////////////////////////////////////////////
+  // checkerboard
   const secLeft = document.querySelector(".sec-left");
   let checkerboard = document.getElementById("board");
   checkerboard.innerHTML = "";
@@ -27,11 +28,6 @@ export default function () {
   const para = document.createElement("div");
   para.classList.add("checkerboard");
   para.id = "board";
-  const src = [
-    "/public/img/technic/technic/1.jpg",
-    "/public/img/technic/technic/2.jpg",
-    "/public/img/technic/technic/3.jpg",
-  ];
   let numberURL = 1;
   setInterval(() => {
     checkerboard.remove();

@@ -19,8 +19,21 @@
     width: 100%;
     width: 300px;
     height: 430px;
-    border-radius: 5px;
-    box-shadow: $shadow-box-2;
+    box-shadow: 1px 1px 1px #fff, -2px 1px 10px #000;
+    border-radius: 35px;
+    $Checkerboard-border-radius: 20px;
+    & > div:nth-child(1) {
+      border-radius: $Checkerboard-border-radius 0 0 0;
+    }
+    & > div:nth-child(5) {
+      border-radius: 0 $Checkerboard-border-radius 0 0;
+    }
+    & > div:nth-child(21) {
+      border-radius: 0 0 0 $Checkerboard-border-radius;
+    }
+    & > div:nth-child(25) {
+      border-radius: 0 0 $Checkerboard-border-radius 0;
+    }
   }
 
   @media screen and (prefers-reduced-motion: no-preference) {
